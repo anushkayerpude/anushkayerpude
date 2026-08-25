@@ -97,21 +97,18 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 ### ⚡ Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,nextjs,react,nodejs,opencv,pytorch,tensorflow,git,github,figma,macos&perline=7" />
+  <img src="./assets/tech-stack-doodle.svg" alt="Doodled Tech Stack Arsenal" width="100%" />
 </div>
 
 <br>
 
 ```txt
-Operating System → MacOS
-Languages        → Python · C++ · JavaScript · TypeScript
-Frontend         → Next.js · React
-Backend          → Node.js
-Computer Vision  → OpenCV
-Machine Learning → PyTorch · TensorFlow
-Robotics         → Gazebo · SLAM
-Design           → Figma · UX/UI
-Tools            → GitHub · Antigravity
+Operating System → MacOS · Linux
+Languages        → Python · C++ · C · JavaScript · TypeScript · SQL
+Frontend & UI    → Next.js · React · Node.js · TailwindCSS · Figma · UX/UI
+AI & Vision      → PyTorch · TensorFlow · OpenCV · Scikit-Learn · Calibration
+Robotics & GIS   → ROS/ROS2 · Gazebo · SLAM · Spatial Intelligence · Game Dev
+Tools & Env      → Git · GitHub · VS Code · Docker · Postman · Antigravity
 ```
 
 ---
