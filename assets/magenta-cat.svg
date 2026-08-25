@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" width="240" height="80" fill="none">
+  <defs>
+    <linearGradient id="catGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A85" />
+      <stop offset="60%" stop-color="#D946EF" />
+      <stop offset="100%" stop-color="#831843" />
+    </linearGradient>
+    <linearGradient id="earGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF66B2" />
+      <stop offset="100%" stop-color="#FF2A85" />
+    </linearGradient>
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2A85" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#D946EF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#831843" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="catGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .cat-breathe { animation: catBreathe 2.8s ease-in-out infinite alternate; }
+    @keyframes catBreathe {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-3px); }
+    }
+
+    .cat-head { transform-origin: 145px 58px; animation: headTilt 4s ease-in-out infinite; }
+    @keyframes headTilt {
+      0%, 100% { transform: rotate(0deg); }
+      35% { transform: rotate(-3deg); }
+      75% { transform: rotate(3deg); }
+    }
+
+    .ear-l { transform-origin: 125px 38px; animation: earL 5s infinite; }
+    @keyframes earL {
+      0%, 82%, 100% { transform: rotate(0deg); }
+      86% { transform: rotate(-9deg); }
+      90% { transform: rotate(4deg); }
+      94% { transform: rotate(0deg); }
+    }
+
+    .ear-r { transform-origin: 165px 38px; animation: earR 6s infinite 1s; }
+    @keyframes earR {
+      0%, 82%, 100% { transform: rotate(0deg); }
+      86% { transform: rotate(9deg); }
+      90% { transform: rotate(-4deg); }
+      94% { transform: rotate(0deg); }
+    }
+
+    .cat-eyes { transform-origin: 145px 58px; animation: catBlink 4s infinite; }
+    @keyframes catBlink {
+      0%, 93%, 97%, 100% { transform: scaleY(1); opacity: 1; }
+      95% { transform: scaleY(0.1); opacity: 0.2; }
+    }
+
+    .cat-tail { transform-origin: 235px 72px; animation: tailWave 2.6s ease-in-out infinite alternate; }
+    @keyframes tailWave {
+      0% { transform: rotate(-14deg); }
+      100% { transform: rotate(20deg); }
+    }
+
+    .paw-l { animation: pawKnead 2.2s ease-in-out infinite alternate; }
+    .paw-r { animation: pawKnead 2.2s ease-in-out infinite alternate 1.1s; }
+    @keyframes pawKnead {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-2.5px); }
+    }
+
+    .heart-1 { animation: floatH1 3s ease-in-out infinite; }
+    .heart-2 { animation: floatH2 3.6s ease-in-out infinite 1.4s; }
+    @keyframes floatH1 {
+      0% { transform: translate(0, 0) scale(0.6); opacity: 0; }
+      40% { opacity: 0.95; transform: translate(5px, -12px) scale(1.1); }
+      100% { transform: translate(12px, -28px) scale(0.8); opacity: 0; }
+    }
+    @keyframes floatH2 {
+      0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+      40% { opacity: 0.9; transform: translate(-6px, -10px) scale(1); }
+      100% { transform: translate(-14px, -24px) scale(0.7); opacity: 0; }
+    }
+
+    .sparkle { animation: spGlow 1.8s ease-in-out infinite alternate; }
+    @keyframes spGlow {
+      0% { opacity: 0.2; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1.2); }
+    }
+  </style>
+
+  <!-- Ambient Glow & Shadow -->
+  <ellipse cx="175" cy="100" rx="75" ry="9" fill="url(#shadowGrad)" filter="url(#catGlow)">
+    <animate attributeName="rx" values="75;78;75" dur="2.8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2.8s" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse cx="175" cy="99" rx="65" ry="6" fill="#18121E" opacity="0.5" />
+
+  <!-- Floating Hearts & Sparkles -->
+  <g class="heart-1" fill="#FF2A85" transform="translate(195, 28)">
+    <path d="M 10 5 C 10 1, 4 -1, 0 3 C -4 -1, -10 1, -10 5 C -10 11, 0 16, 0 16 C 0 16, 10 11, 10 5 Z" />
+    <animateTransform attributeName="transform" type="translate" values="195,28; 202,16; 208,0" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.95;0" dur="3s" repeatCount="indefinite" />
+  </g>
+  <g class="heart-2" fill="#FF66B2" transform="translate(95, 38)">
+    <path d="M 8 4 C 8 1, 3 0, 0 3 C -3 0, -8 1, -8 4 C -8 9, 0 13, 0 13 C 0 13, 8 9, 8 4 Z" />
+    <animateTransform attributeName="transform" type="translate" values="95,38; 89,26; 82,12" dur="3.6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.9;0" dur="3.6s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Sparkles -->
+  <g class="sparkle" fill="#FCE7F3" transform="translate(245, 25)">
+    <polygon points="0,-5 1.5,-1.5 5,0 1.5,1.5 0,5 -1.5,1.5 -5,0 -1.5,-1.5" />
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite" />
+  </g>
+  <g class="sparkle" fill="#FF80BF" transform="translate(80, 68)">
+    <polygon points="0,-3.5 1,-1 3.5,0 1,1 0,3.5 -1,1 -3.5,0 -1,-1" />
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Animated Cat Group -->
+  <g class="cat-breathe">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="2.8s" repeatCount="indefinite" />
+
+    <!-- Tail (Swishing) -->
+    <g class="cat-tail">
+      <path d="M 230 72 C 255 70, 276 56, 270 40 C 265 29, 250 35, 253 45 C 256 54, 240 63, 226 68 Z" 
+            fill="url(#catGrad)" stroke="#FF66B2" stroke-width="1.5" stroke-linecap="round" />
+      <animateTransform attributeName="transform" type="rotate" values="-14 235 72; 20 235 72; -14 235 72" dur="2.6s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Main Loaf Body -->
+    <path d="M 115 86 C 105 74, 120 58, 148 56 C 185 52, 225 54, 240 70 C 250 82, 244 94, 220 96 C 180 98, 135 98, 115 86 Z" 
+          fill="url(#catGrad)" stroke="#FF2A85" stroke-width="2" />
+    
+    <!-- Body Highlight Ridge -->
+    <path d="M 138 62 C 172 58, 210 60, 230 72" stroke="#FF80BF" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Cat Head -->
+    <g class="cat-head">
+      <animateTransform attributeName="transform" type="rotate" values="0 145 58; -3 145 58; 3 145 58; 0 145 58" dur="4s" repeatCount="indefinite" />
+
+      <!-- Left Ear -->
+      <g class="ear-l">
+        <polygon points="118,48 124,24 138,42" fill="url(#catGrad)" stroke="#FF2A85" stroke-width="1.8" stroke-linejoin="round" />
+        <polygon points="121,44 125,29 134,41" fill="url(#earGrad)" />
+        <animateTransform attributeName="transform" type="rotate" values="0 125 38; 0 125 38; -8 125 38; 4 125 38; 0 125 38" keyTimes="0;0.82;0.87;0.92;1" dur="5s" repeatCount="indefinite" />
+      </g>
+      <!-- Right Ear -->
+      <g class="ear-r">
+        <polygon points="152,42 166,24 172,48" fill="url(#catGrad)" stroke="#FF2A85" stroke-width="1.8" stroke-linejoin="round" />
+        <polygon points="156,41 165,29 169,44" fill="url(#earGrad)" />
+        <animateTransform attributeName="transform" type="rotate" values="0 165 38; 0 165 38; 8 165 38; -4 165 38; 0 165 38" keyTimes="0;0.82;0.87;0.92;1" dur="6s" repeatCount="indefinite" />
+      </g>
+
+      <!-- Head Shape -->
+      <ellipse cx="145" cy="58" rx="27" ry="22" fill="url(#catGrad)" stroke="#FF2A85" stroke-width="2" />
+      <path d="M 127 44 C 138 40, 152 40, 163 44" stroke="#FF80BF" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+
+      <!-- Eyes (Happy Purring Arcs with Blink) -->
+      <g class="cat-eyes">
+        <path d="M 130 56 Q 136 50 142 56" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <path d="M 148 56 Q 154 50 160 56" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" fill="none" />
+        <!-- Cheeks Blush -->
+        <ellipse cx="130" cy="62" rx="3.5" ry="1.8" fill="#FF66B2" opacity="0.85" />
+        <ellipse cx="160" cy="62" rx="3.5" ry="1.8" fill="#FF66B2" opacity="0.85" />
+        <animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 0.1; 1 1; 1 1" keyTimes="0;0.92;0.95;0.98;1" dur="4s" repeatCount="indefinite" />
+      </g>
+
+      <!-- Nose & Mouth -->
+      <polygon points="145,61 142,58 148,58" fill="#FF66B2" />
+      <path d="M 142 62 Q 145 65 145 63 Q 145 65 148 62" stroke="#FCE7F3" stroke-width="1.5" stroke-linecap="round" fill="none" />
+
+      <!-- Whiskers -->
+      <line x1="131" y1="61" x2="112" y2="58" stroke="#FCE7F3" stroke-width="1.1" stroke-linecap="round" opacity="0.85" />
+      <line x1="131" y1="64" x2="114" y2="67" stroke="#FCE7F3" stroke-width="1.1" stroke-linecap="round" opacity="0.85" />
+      <line x1="159" y1="61" x2="178" y2="58" stroke="#FCE7F3" stroke-width="1.1" stroke-linecap="round" opacity="0.85" />
+      <line x1="159" y1="64" x2="176" y2="67" stroke="#FCE7F3" stroke-width="1.1" stroke-linecap="round" opacity="0.85" />
+    </g>
+
+    <!-- Front Tucked Paws (Soft Kneading) -->
+    <g class="paw-l">
+      <ellipse cx="131" cy="89" rx="8" ry="5.5" fill="#FF2A85" stroke="#FF66B2" stroke-width="1.3" />
+      <line x1="129" y1="88" x2="129" y2="92" stroke="#FCE7F3" stroke-width="0.9" stroke-linecap="round" />
+      <line x1="133" y1="88" x2="133" y2="92" stroke="#FCE7F3" stroke-width="0.9" stroke-linecap="round" />
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2.5; 0,0" dur="2.2s" repeatCount="indefinite" />
+    </g>
+    <g class="paw-r">
+      <ellipse cx="158" cy="89" rx="8" ry="5.5" fill="#FF2A85" stroke="#FF66B2" stroke-width="1.3" />
+      <line x1="156" y1="88" x2="156" y2="92" stroke="#FCE7F3" stroke-width="0.9" stroke-linecap="round" />
+      <line x1="160" y1="88" x2="160" y2="92" stroke="#FCE7F3" stroke-width="0.9" stroke-linecap="round" />
+      <animateTransform attributeName="transform" type="translate" values="0,-2.5; 0,0; 0,-2.5" dur="2.2s" repeatCount="indefinite" />
+    </g>
+
+  </g>
+</svg>
