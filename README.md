@@ -122,7 +122,7 @@ Tools            → GitHub · Antigravity
     <td width="33%" valign="top">
       <h3>🤖 SLAM Game</h3>
       <p><em>3rd Year Web Dev Project</em></p>
-      <p>Doing absolute zabardasti for Maitri mam while somehow turning SLAM concepts into a web-dev project.</p>
+      <p>Doing absolute zabardasti for Maitri mam while somehow turning SLAM concepts into a game-dev project.</p>
       <br>
       <code>SLAM</code> <code>Web Dev</code> <code>Robotics</code>
     </td>
