@@ -10,10 +10,6 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Building+things+that+actually+work.;Computer+Vision+%E2%80%A2+ML+%E2%80%A2+Robotics;Full-Stack+%E2%80%A2+UX%2FUI+%E2%80%A2+Game+Design;Probably+debugging+something+right+now..." />
 
-<br>
-
-<img src="./assets/magenta-cat.svg" alt="Animated Cute Chubby Cat" width="260" />
-
 <br><br>
 
 <a href="https://github.com/anushkayerpude">
@@ -97,8 +93,22 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 ### ⚡ Tech Stack
 
 <div align="center">
-  <img src="./assets/tech-stack-doodle.svg" alt="Doodled Tech Stack Icons" width="100%" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,nextjs,react,nodejs,opencv,pytorch,tensorflow,git,github,figma,macos&perline=7" />
 </div>
+
+<br>
+
+```txt
+Operating System → MacOS
+Languages        → Python · C++ · JavaScript · TypeScript
+Frontend         → Next.js · React
+Backend          → Node.js
+Computer Vision  → OpenCV
+Machine Learning → PyTorch · TensorFlow
+Robotics         → Gazebo · SLAM
+Design           → Figma · UX/UI
+Tools            → GitHub · Antigravity
+```
 
 ---
 
