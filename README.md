@@ -161,7 +161,7 @@ Tools            → GitHub · Antigravity
 
 ---
 
-### 🐍 Contributions, but make them alive
+### 🐍 Contributions, trying to make them alive
 
 <div align="center">
   <img src="./assets/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
