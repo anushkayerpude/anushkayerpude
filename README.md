@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="./assets/cat.gif" alt="Adorable Cute Magenta Cat" width="180" />
+<img src="./assets/cat.gif" alt="Cute Fluffy Magenta Cat" width="160" />
 
 <br><br>
 
