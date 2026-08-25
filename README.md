@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/rafale-flight.gif" alt="Dassault Rafale Supersonic Flight" width="100%" />
+<img src="./assets/coding-girl-cat.gif" alt="Girl Developer Coding with Cat" width="100%" />
 
 <br><br>
 
