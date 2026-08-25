@@ -1,505 +1,367 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 330" width="100%" height="100%" fill="none">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#140B18" />
-      <stop offset="50%" stop-color="#190E1F" />
-      <stop offset="100%" stop-color="#0E0712" />
+      <stop offset="0%" stop-color="#150B1A" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0D0610" stop-opacity="0.95" />
     </linearGradient>
 
-    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#241228" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#180A1B" stop-opacity="0.9" />
+    <linearGradient id="tileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28112E" />
+      <stop offset="100%" stop-color="#18091C" />
     </linearGradient>
 
-    <linearGradient id="magGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="magLine" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF2A85" />
-      <stop offset="100%" stop-color="#E879F9" />
+      <stop offset="50%" stop-color="#FF66B2" />
+      <stop offset="100%" stop-color="#D946EF" />
     </linearGradient>
 
-    <filter id="doodleGlow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <radialGradient id="glowTile" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FF2A85" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FF2A85" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
-
-    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#FF2A85" fill-opacity="0.08" />
-    </pattern>
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
-
-    text {
-      font-family: 'JetBrains Mono', monospace;
-      user-select: none;
-    }
-
-    .handwritten {
-      font-family: 'Caveat', cursive, sans-serif;
-    }
-
-    /* Sketchy doodle card borders */
-    .doodle-card {
-      fill: url(#cardGrad1);
-      stroke: #FF2A85;
-      stroke-width: 1.6;
-      stroke-linejoin: round;
-      stroke-linecap: round;
+    .tile {
+      fill: url(#tileGrad);
+      stroke: #831843;
+      stroke-width: 1.5;
+      rx: 14px;
       transition: all 0.3s ease;
     }
-
-    .badge-pill {
-      fill: #220F26;
-      stroke: #FF66B2;
-      stroke-width: 1.2;
-      stroke-dasharray: 240, 2;
-      rx: 8px;
-    }
-
-    .badge-pill:hover {
-      fill: #36143D;
+    .tile:hover {
       stroke: #FF2A85;
+      fill: #34123D;
+      filter: drop-shadow(0 0 8px #FF2A85);
     }
-
-    .doodle-accent {
-      stroke: #FF66B2;
+    .d-stroke {
+      stroke: #FF2A85;
+      stroke-width: 2.2;
       stroke-linecap: round;
       stroke-linejoin: round;
+      fill: none;
+    }
+    .d-stroke-pink {
+      stroke: #FF66B2;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .d-stroke-fuchsia {
+      stroke: #D946EF;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+    .d-fill {
+      fill: #FF2A85;
+    }
+    .d-fill-pink {
+      fill: #FF66B2;
+    }
+    .d-fill-fuchsia {
+      fill: #D946EF;
+    }
+    .d-fill-soft {
+      fill: #FDA4AF;
     }
 
-    .floating-sparkle {
-      animation: floatDoodle 3s ease-in-out infinite alternate;
-    }
-    @keyframes floatDoodle {
-      0% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
-      100% { transform: translateY(-4px) rotate(8deg); opacity: 1; }
-    }
-
-    .pulse-glow {
-      animation: pulseGlow 4s ease-in-out infinite alternate;
-    }
-    @keyframes pulseGlow {
-      0% { opacity: 0.4; }
-      100% { opacity: 0.85; }
+    /* Floating subtle wiggle for doodled warmth */
+    .w-1 { animation: floatAnim 4s ease-in-out infinite alternate; }
+    .w-2 { animation: floatAnim 4.5s ease-in-out infinite alternate 0.5s; }
+    .w-3 { animation: floatAnim 3.8s ease-in-out infinite alternate 1s; }
+    .w-4 { animation: floatAnim 4.2s ease-in-out infinite alternate 1.5s; }
+    @keyframes floatAnim {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-3px); }
     }
   </style>
 
-  <!-- Canvas Background with Doodle Grid -->
-  <rect width="850" height="480" rx="16" fill="url(#bgGrad)" stroke="#4A1236" stroke-width="1.5" />
-  <rect width="850" height="480" rx="16" fill="url(#dotGrid)" />
+  <!-- Background Canvas -->
+  <rect width="840" height="330" rx="18" fill="url(#bgGrad)" stroke="#4A0F30" stroke-width="1.6" />
 
-  <!-- Doodled Corner Brackets / Tape -->
-  <g stroke="#FF2A85" stroke-width="2" stroke-linecap="round" opacity="0.6">
-    <path d="M 20 40 Q 20 20 40 20" />
-    <path d="M 830 40 Q 830 20 810 20" />
-    <path d="M 20 440 Q 20 460 40 460" />
-    <path d="M 830 440 Q 830 460 810 460" />
-    <!-- Tape strip top center -->
-    <polygon points="400,10 450,10 445,26 395,26" fill="#FF2A85" fill-opacity="0.25" stroke="#FF66B2" stroke-width="1" />
+  <!-- ==================== ROW 1 (8 Icons) ==================== -->
+
+  <!-- 1. Python -->
+  <g class="w-1" transform="translate(20, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Python dual snakes -->
+    <path d="M 42 26 C 32 26, 28 32, 28 38 C 28 46, 36 46, 44 46 L 50 46 C 56 46, 60 49, 60 56 C 60 64, 52 64, 46 64" class="d-stroke" />
+    <path d="M 48 64 C 58 64, 62 58, 62 52 C 62 44, 54 44, 46 44 L 40 44 C 34 44, 30 41, 30 34 C 30 26, 38 26, 44 26" class="d-stroke-pink" />
+    <circle cx="37" cy="32" r="2.2" class="d-fill-pink" />
+    <circle cx="53" cy="58" r="2.2" class="d-fill" />
   </g>
 
-  <!-- Header Scribble -->
-  <g transform="translate(425, 42)">
-    <text text-anchor="middle" y="0" fill="#FF2A85" font-size="20" font-weight="700" letter-spacing="1">⚡ MY DOODLE TECH ARSENAL ⚡</text>
-    <!-- Underline scribble -->
-    <path d="M -150 10 Q -60 16 0 10 Q 70 5 150 11" stroke="#FF66B2" stroke-width="2" fill="none" stroke-linecap="round" />
-    <!-- Cute doodle star -->
-    <path d="M 165 6 L 168 11 L 174 11 L 169 14 L 171 19 L 165 16 L 160 19 L 162 14 L 157 11 L 163 11 Z" fill="#FF80BF" />
-    <path d="M -168 6 L -165 11 L -159 11 L -164 14 L -162 19 L -168 16 L -173 19 L -171 14 L -176 11 L -170 11 Z" fill="#FF80BF" />
+  <!-- 2. C++ -->
+  <g class="w-2" transform="translate(120, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled C with ++ -->
+    <path d="M 45 32 C 34 32, 26 38, 26 45 C 26 52, 34 58, 45 58" class="d-stroke" stroke-width="3.5" />
+    <!-- First + -->
+    <path d="M 54 40 L 54 50 M 49 45 L 59 45" class="d-stroke-pink" stroke-width="2.5" />
+    <!-- Second + -->
+    <path d="M 68 40 L 68 50 M 63 45 L 73 45" class="d-stroke-fuchsia" stroke-width="2.5" />
   </g>
 
-  <!-- ==================== COLUMN 1: LANGUAGES & FRONTEND (Left) ==================== -->
-
-  <!-- CARD 1: LANGUAGES -->
-  <g transform="translate(30, 75)">
-    <!-- Wobbly doodle box -->
-    <path d="M 12 0 L 238 0 Q 252 0 250 14 L 248 110 Q 248 122 236 122 L 14 122 Q 0 122 2 110 L 0 14 Q 0 0 12 0 Z" class="doodle-card" />
-    <!-- Category Title -->
-    <text x="16" y="24" fill="#FF66B2" font-size="13" font-weight="700">💻 LANGUAGES</text>
-    <path d="M 16 28 Q 65 30 115 28" stroke="#D946EF" stroke-width="1.2" fill="none" />
-
-    <!-- Badges Grid (2 cols x 3 rows) -->
-    <!-- Python -->
-    <g transform="translate(14, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Doodled Python Icon (Dual Snake Loops) -->
-      <path d="M 12 8 Q 16 5 20 8 Q 22 10 20 14 L 16 14 Q 14 14 14 16 L 14 18" stroke="#FF2A85" stroke-width="1.4" fill="none" stroke-linecap="round" />
-      <circle cx="15" cy="9" r="0.9" fill="#FFF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Python</text>
-    </g>
-
-    <!-- C++ -->
-    <g transform="translate(128, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- C++ Doodle (C with ++ scribble) -->
-      <path d="M 18 8 Q 12 8 12 12 Q 12 16 18 16" stroke="#FF66B2" stroke-width="1.4" fill="none" stroke-linecap="round" />
-      <path d="M 21 10 L 21 14 M 19 12 L 23 12 M 25 10 L 25 14 M 23 12 L 27 12" stroke="#E879F9" stroke-width="1.2" stroke-linecap="round" />
-      <text x="32" y="16" fill="#FCE7F3" font-size="11" font-weight="600">C++</text>
-    </g>
-
-    <!-- JavaScript -->
-    <g transform="translate(14, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- JS badge doodle -->
-      <rect x="10" y="5" width="13" height="14" rx="2" stroke="#FF2A85" stroke-width="1.2" fill="none" />
-      <path d="M 18 10 Q 18 16 14 16" stroke="#FF66B2" stroke-width="1.1" fill="none" stroke-linecap="round" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">JavaScript</text>
-    </g>
-
-    <!-- TypeScript -->
-    <g transform="translate(128, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <rect x="10" y="5" width="13" height="14" rx="2" stroke="#FF66B2" stroke-width="1.2" fill="none" />
-      <path d="M 13 8 L 21 8 M 17 8 L 17 16" stroke="#FF2A85" stroke-width="1.1" stroke-linecap="round" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">TypeScript</text>
-    </g>
-
-    <!-- C -->
-    <g transform="translate(14, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <path d="M 20 8 Q 13 8 13 12 Q 13 16 20 16" stroke="#D946EF" stroke-width="1.4" fill="none" stroke-linecap="round" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">C Lang</text>
-    </g>
-
-    <!-- SQL -->
-    <g transform="translate(128, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Cylinder doodle -->
-      <ellipse cx="17" cy="8" rx="6" ry="2.5" stroke="#FF66B2" stroke-width="1.1" fill="none" />
-      <path d="M 11 8 L 11 15 Q 17 18 23 15 L 23 8" stroke="#FF2A85" stroke-width="1.1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">SQL</text>
-    </g>
+  <!-- 3. JavaScript -->
+  <g class="w-3" transform="translate(220, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled JS Badge -->
+    <rect x="25" y="25" width="40" height="40" rx="8" class="d-stroke-fuchsia" stroke-dasharray="140, 2" />
+    <!-- J -->
+    <path d="M 39 40 L 39 54 C 39 60, 31 60, 31 54" class="d-stroke-pink" />
+    <!-- S -->
+    <path d="M 59 42 C 54 39, 47 40, 47 45 C 47 52, 59 50, 59 56 C 59 61, 51 61, 46 58" class="d-stroke" />
   </g>
 
-
-  <!-- CARD 2: FRONTEND & CREATIVE TECH -->
-  <g transform="translate(30, 212)">
-    <path d="M 14 0 L 236 0 Q 250 0 252 14 L 248 116 Q 248 126 236 126 L 12 126 Q 0 126 2 114 L 0 12 Q 0 0 14 0 Z" class="doodle-card" />
-    <text x="16" y="24" fill="#FF66B2" font-size="13" font-weight="700">🎨 FRONTEND &amp; DESIGN</text>
-    <path d="M 16 28 Q 85 30 165 28" stroke="#D946EF" stroke-width="1.2" fill="none" />
-
-    <!-- React -->
-    <g transform="translate(14, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Atom loop doodle -->
-      <ellipse cx="17" cy="12" rx="6" ry="2.5" stroke="#FF2A85" stroke-width="1" transform="rotate(30 17 12)" fill="none" />
-      <ellipse cx="17" cy="12" rx="6" ry="2.5" stroke="#FF66B2" stroke-width="1" transform="rotate(-30 17 12)" fill="none" />
-      <circle cx="17" cy="12" r="1" fill="#FFF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">React</text>
-    </g>
-
-    <!-- Next.js -->
-    <g transform="translate(128, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Next N doodle -->
-      <circle cx="17" cy="12" r="6" stroke="#FF66B2" stroke-width="1.1" fill="none" />
-      <path d="M 14 8 L 14 16 M 14 9 L 19 16 M 19 8 L 19 13" stroke="#FFF" stroke-width="1" stroke-linecap="round" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Next.js</text>
-    </g>
-
-    <!-- Node.js -->
-    <g transform="translate(14, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Hexagon doodle -->
-      <polygon points="17,6 23,9.5 23,14.5 17,18 11,14.5 11,9.5" stroke="#FF2A85" stroke-width="1.1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Node.js</text>
-    </g>
-
-    <!-- Figma -->
-    <g transform="translate(128, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Figma bubbles doodle -->
-      <circle cx="14" cy="9" r="2.5" fill="#FF2A85" />
-      <circle cx="19" cy="9" r="2.5" fill="#FF66B2" />
-      <circle cx="14" cy="14" r="2.5" fill="#D946EF" />
-      <circle cx="19" cy="14" r="2.5" fill="#FDA4AF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Figma</text>
-    </g>
-
-    <!-- UX/UI & Prototyping -->
-    <g transform="translate(14, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Wireframe box doodle -->
-      <rect x="11" y="7" width="12" height="10" rx="1.5" stroke="#E879F9" stroke-width="1.1" fill="none" />
-      <line x1="11" y1="10" x2="23" y2="10" stroke="#E879F9" stroke-width="0.8" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">UX / UI</text>
-    </g>
-
-    <!-- TailwindCSS / CSS3 -->
-    <g transform="translate(128, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Wind wave doodle -->
-      <path d="M 12 14 Q 15 9 17 12 Q 19 9 22 10" stroke="#FF2A85" stroke-width="1.2" fill="none" stroke-linecap="round" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Tailwind</text>
-    </g>
+  <!-- 4. TypeScript -->
+  <g class="w-4" transform="translate(320, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled TS Badge -->
+    <rect x="25" y="25" width="40" height="40" rx="8" class="d-stroke" stroke-dasharray="140, 2" />
+    <!-- T -->
+    <path d="M 32 38 L 46 38 M 39 38 L 39 58" class="d-stroke-pink" stroke-width="2.5" />
+    <!-- S -->
+    <path d="M 59 42 C 55 39, 49 40, 49 45 C 49 52, 59 50, 59 56 C 59 61, 52 61, 48 58" class="d-stroke-fuchsia" />
   </g>
 
-
-  <!-- ==================== COLUMN 2: INTELLIGENCE & ROBOTICS (Middle) ==================== -->
-
-  <!-- CARD 3: ML & COMPUTER VISION -->
-  <g transform="translate(300, 75)">
-    <path d="M 12 0 L 238 0 Q 250 0 252 14 L 248 110 Q 248 122 236 122 L 14 122 Q 0 122 2 110 L 0 14 Q 0 0 12 0 Z" class="doodle-card" />
-    <text x="16" y="24" fill="#FF66B2" font-size="13" font-weight="700">🧠 ML &amp; COMPUTER VISION</text>
-    <path d="M 16 28 Q 95 30 185 28" stroke="#D946EF" stroke-width="1.2" fill="none" />
-
-    <!-- PyTorch -->
-    <g transform="translate(14, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Flame doodle -->
-      <path d="M 17 6 Q 21 10 19 14 Q 17 17 14 15 Q 13 11 17 6 Z" stroke="#FF2A85" stroke-width="1.2" fill="none" />
-      <circle cx="20" cy="8" r="0.9" fill="#FF66B2" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">PyTorch</text>
-    </g>
-
-    <!-- OpenCV -->
-    <g transform="translate(128, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- OpenCV 3 rings doodle -->
-      <circle cx="17" cy="9" r="2.2" stroke="#FF2A85" stroke-width="1" fill="none" />
-      <circle cx="13.5" cy="14" r="2.2" stroke="#FF66B2" stroke-width="1" fill="none" />
-      <circle cx="20.5" cy="14" r="2.2" stroke="#D946EF" stroke-width="1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">OpenCV</text>
-    </g>
-
-    <!-- TensorFlow -->
-    <g transform="translate(14, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- 3D Cube / T doodle -->
-      <path d="M 17 7 L 22 10 L 22 15 L 17 18 L 12 15 L 12 10 Z" stroke="#FF66B2" stroke-width="1.1" fill="none" />
-      <line x1="17" y1="7" x2="17" y2="18" stroke="#FF2A85" stroke-width="1" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">TensorFlow</text>
-    </g>
-
-    <!-- Image Processing -->
-    <g transform="translate(128, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Camera lens doodle -->
-      <circle cx="17" cy="12" r="5" stroke="#E879F9" stroke-width="1.1" fill="none" />
-      <circle cx="17" cy="12" r="2" fill="#FF2A85" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Vision Pipelines</text>
-    </g>
-
-    <!-- Scikit-Learn -->
-    <g transform="translate(14, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Scatter graph dots -->
-      <circle cx="13" cy="14" r="1.5" fill="#FF2A85" />
-      <circle cx="17" cy="10" r="1.5" fill="#FF66B2" />
-      <circle cx="21" cy="8" r="1.5" fill="#D946EF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Scikit-Learn</text>
-    </g>
-
-    <!-- Calibration Systems -->
-    <g transform="translate(128, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Calibration grid doodle -->
-      <rect x="11" y="7" width="11" height="10" stroke="#FF66B2" stroke-width="1" fill="none" />
-      <line x1="11" y1="12" x2="22" y2="12" stroke="#FF2A85" stroke-width="0.8" />
-      <line x1="16.5" y1="7" x2="16.5" y2="17" stroke="#FF2A85" stroke-width="0.8" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Calibration</text>
-    </g>
+  <!-- 5. React -->
+  <g class="w-1" transform="translate(420, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Atom Ellipses -->
+    <ellipse cx="45" cy="45" rx="26" ry="9" class="d-stroke" />
+    <ellipse cx="45" cy="45" rx="26" ry="9" class="d-stroke-pink" transform="rotate(60 45 45)" />
+    <ellipse cx="45" cy="45" rx="26" ry="9" class="d-stroke-fuchsia" transform="rotate(120 45 45)" />
+    <circle cx="45" cy="45" r="4" class="d-fill-pink" />
   </g>
 
-
-  <!-- CARD 4: ROBOTICS & SPATIAL SYSTEMS -->
-  <g transform="translate(300, 212)">
-    <path d="M 12 0 L 238 0 Q 252 0 250 14 L 248 116 Q 248 126 236 126 L 14 126 Q 0 126 2 114 L 0 12 Q 0 0 12 0 Z" class="doodle-card" />
-    <text x="16" y="24" fill="#FF66B2" font-size="13" font-weight="700">🤖 ROBOTICS &amp; SPATIAL</text>
-    <path d="M 16 28 Q 95 30 175 28" stroke="#D946EF" stroke-width="1.2" fill="none" />
-
-    <!-- ROS / ROS2 -->
-    <g transform="translate(14, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Robot nodes doodle -->
-      <circle cx="14" cy="10" r="1.5" fill="#FF2A85" />
-      <circle cx="20" cy="10" r="1.5" fill="#FF2A85" />
-      <circle cx="17" cy="15" r="1.5" fill="#FF66B2" />
-      <line x1="14" y1="10" x2="20" y2="10" stroke="#FFF" stroke-width="0.8" />
-      <line x1="14" y1="10" x2="17" y2="15" stroke="#FFF" stroke-width="0.8" />
-      <line x1="20" y1="10" x2="17" y2="15" stroke="#FFF" stroke-width="0.8" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">ROS / ROS2</text>
-    </g>
-
-    <!-- Gazebo -->
-    <g transform="translate(128, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Gazebo roof doodle -->
-      <path d="M 12 15 L 17 8 L 22 15 Z" stroke="#FF66B2" stroke-width="1.1" fill="none" />
-      <line x1="14" y1="15" x2="14" y2="17" stroke="#FF2A85" stroke-width="1" />
-      <line x1="20" y1="15" x2="20" y2="17" stroke="#FF2A85" stroke-width="1" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Gazebo</text>
-    </g>
-
-    <!-- SLAM -->
-    <g transform="translate(14, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Lidar radar sweep doodle -->
-      <path d="M 12 16 A 6 6 0 0 1 22 16" stroke="#FF2A85" stroke-width="1.2" fill="none" />
-      <path d="M 14 16 A 3 3 0 0 1 20 16" stroke="#FF66B2" stroke-width="1.2" fill="none" />
-      <circle cx="17" cy="16" r="1" fill="#FFF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">SLAM</text>
-    </g>
-
-    <!-- GIS / Spatial (UrbanLens) -->
-    <g transform="translate(128, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Globe / Map pin doodle -->
-      <circle cx="17" cy="12" r="5" stroke="#E879F9" stroke-width="1.1" fill="none" />
-      <path d="M 12 12 Q 17 15 22 12" stroke="#FF2A85" stroke-width="0.8" fill="none" />
-      <line x1="17" y1="7" x2="17" y2="17" stroke="#FF66B2" stroke-width="0.8" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">GIS / Spatial</text>
-    </g>
-
-    <!-- Game Development -->
-    <g transform="translate(14, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Gamepad doodle -->
-      <rect x="11" y="8" width="12" height="8" rx="2" stroke="#FF2A85" stroke-width="1.1" fill="none" />
-      <path d="M 13 12 L 16 12 M 14.5 10.5 L 14.5 13.5" stroke="#FFF" stroke-width="0.9" />
-      <circle cx="20" cy="11" r="0.8" fill="#FF66B2" />
-      <circle cx="21.5" cy="13" r="0.8" fill="#FF80BF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Game Dev</text>
-    </g>
-
-    <!-- Autonomous Systems -->
-    <g transform="translate(128, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Jet/Drone wings doodle -->
-      <path d="M 12 14 L 17 8 L 22 14 L 17 12 Z" stroke="#FF66B2" stroke-width="1.1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Auto Systems</text>
-    </g>
+  <!-- 6. Next.js -->
+  <g class="w-2" transform="translate(520, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Next Circle + N -->
+    <circle cx="45" cy="45" r="24" class="d-stroke" stroke-dasharray="150, 3" />
+    <path d="M 35 32 L 35 58 M 35 33 L 53 58 M 53 32 L 53 48" class="d-stroke-pink" stroke-width="2.6" />
   </g>
 
-
-  <!-- ==================== COLUMN 3: TOOLS, OS & NOTES (Right) ==================== -->
-
-  <!-- CARD 5: DEV TOOLS & ENVIRONMENT -->
-  <g transform="translate(570, 75)">
-    <path d="M 12 0 L 238 0 Q 252 0 250 14 L 248 160 Q 248 172 236 172 L 14 172 Q 0 172 2 160 L 0 14 Q 0 0 12 0 Z" class="doodle-card" />
-    <text x="16" y="24" fill="#FF66B2" font-size="13" font-weight="700">🛠️ TOOLS &amp; ENVIRONMENT</text>
-    <path d="M 16 28 Q 95 30 180 28" stroke="#D946EF" stroke-width="1.2" fill="none" />
-
-    <!-- MacOS -->
-    <g transform="translate(14, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Apple doodle -->
-      <circle cx="17" cy="13" r="4" stroke="#FF2A85" stroke-width="1.1" fill="none" />
-      <path d="M 17 8 Q 19 6 18 5" stroke="#FF66B2" stroke-width="1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">MacOS</text>
-    </g>
-
-    <!-- Linux -->
-    <g transform="translate(128, 38)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Terminal prompt doodle -->
-      <path d="M 13 9 L 16 12 L 13 15" stroke="#FF66B2" stroke-width="1.2" fill="none" stroke-linecap="round" />
-      <line x1="18" y1="15" x2="22" y2="15" stroke="#FFF" stroke-width="1.2" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Linux</text>
-    </g>
-
-    <!-- Git -->
-    <g transform="translate(14, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Git branch doodle -->
-      <circle cx="14" cy="15" r="1.5" fill="#FF2A85" />
-      <circle cx="14" cy="9" r="1.5" fill="#FF2A85" />
-      <circle cx="20" cy="9" r="1.5" fill="#FF66B2" />
-      <line x1="14" y1="9" x2="14" y2="15" stroke="#FFF" stroke-width="1" />
-      <path d="M 14 13 Q 18 13 20 9" stroke="#FFF" stroke-width="1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Git</text>
-    </g>
-
-    <!-- GitHub -->
-    <g transform="translate(128, 66)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Cat silhouette doodle -->
-      <path d="M 13 14 Q 13 9 17 9 Q 21 9 21 14" stroke="#E879F9" stroke-width="1.2" fill="none" />
-      <polygon points="14,10 13,7 16,9" fill="#FF2A85" />
-      <polygon points="20,10 21,7 18,9" fill="#FF2A85" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">GitHub</text>
-    </g>
-
-    <!-- VS Code -->
-    <g transform="translate(14, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Code ribbon doodle -->
-      <path d="M 21 7 L 16 11 L 13 9 L 11 10 L 14 12 L 11 14 L 13 15 L 16 13 L 21 17 Z" stroke="#FF2A85" stroke-width="0.9" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">VS Code</text>
-    </g>
-
-    <!-- Antigravity -->
-    <g transform="translate(128, 94)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Gravity vortex doodle -->
-      <circle cx="17" cy="12" r="5" stroke="#FF66B2" stroke-width="1" stroke-dasharray="3,2" fill="none" />
-      <circle cx="17" cy="12" r="1.5" fill="#FFF" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Antigravity</text>
-    </g>
-
-    <!-- Docker -->
-    <g transform="translate(14, 122)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Whale container boxes doodle -->
-      <rect x="12" y="10" width="3" height="2.5" fill="#FF2A85" />
-      <rect x="16" y="10" width="3" height="2.5" fill="#FF66B2" />
-      <rect x="14" y="7" width="3" height="2.5" fill="#D946EF" />
-      <path d="M 11 13 Q 16 16 22 13" stroke="#FFF" stroke-width="0.9" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Docker</text>
-    </g>
-
-    <!-- Postman / APIs -->
-    <g transform="translate(128, 122)">
-      <rect width="105" height="24" class="badge-pill" />
-      <!-- Rocket doodle -->
-      <path d="M 17 7 Q 21 10 20 14 L 14 14 Q 13 10 17 7 Z" stroke="#E879F9" stroke-width="1" fill="none" />
-      <text x="28" y="16" fill="#FCE7F3" font-size="11" font-weight="600">Postman</text>
-    </g>
+  <!-- 7. Node.js -->
+  <g class="w-3" transform="translate(620, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Hexagon with Inner Branch -->
+    <polygon points="45,23 68,36 68,62 45,75 22,62 22,36" class="d-stroke-pink" />
+    <path d="M 45 35 L 45 52 M 45 45 L 34 50 M 45 45 L 56 50" class="d-stroke" stroke-width="2" />
+    <circle cx="45" cy="35" r="2.5" class="d-fill-fuchsia" />
+    <circle cx="34" cy="50" r="2.5" class="d-fill" />
+    <circle cx="56" cy="50" r="2.5" class="d-fill" />
   </g>
 
-  <!-- DOODLE STICKY NOTE (Bottom Right) -->
-  <g transform="translate(570, 260)">
-    <!-- Sticky note paper with fold -->
-    <path d="M 6 0 L 240 0 Q 248 0 248 8 L 248 68 L 228 88 L 8 88 Q 0 88 0 80 L 0 6 Q 0 0 6 0 Z" fill="#200B22" stroke="#FF66B2" stroke-width="1.3" />
-    <polygon points="248,68 228,68 228,88" fill="#3D1242" stroke="#FF66B2" stroke-width="1" />
-    <!-- Pin doodle on top -->
-    <circle cx="124" cy="6" r="3" fill="#FF2A85" stroke="#FFF" stroke-width="0.8" />
-
-    <!-- Cute doodle note text -->
-    <text class="handwritten" x="18" y="28" fill="#FDA4AF" font-size="16" font-weight="700">✧ Dev Formula ✧</text>
-    <text class="handwritten" x="18" y="50" fill="#FCE7F3" font-size="15">Code ➔ Debug ➔ Coffee ➔ Build</text>
-    <text class="handwritten" x="18" y="72" fill="#FF80BF" font-size="14">✦ Turning ideas into reality ♡</text>
+  <!-- 8. Figma -->
+  <g class="w-4" transform="translate(720, 20)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Figma 5-bubble layout -->
+    <circle cx="37" cy="34" r="8" class="d-stroke" />
+    <circle cx="53" cy="34" r="8" class="d-stroke-pink" />
+    <circle cx="37" cy="48" r="8" class="d-stroke-fuchsia" />
+    <circle cx="53" cy="48" r="8" class="d-stroke-pink" />
+    <circle cx="37" cy="62" r="8" class="d-stroke" />
   </g>
 
-  <!-- ==================== CUTE DOODLE SKETCHES & ARROWS ==================== -->
+  <!-- ==================== ROW 2 (8 Icons) ==================== -->
 
-  <!-- Hand-drawn arrow pointing to robotics -->
-  <g transform="translate(260, 360)">
-    <path d="M 30 10 Q 55 -5 70 15" stroke="#FF66B2" stroke-width="1.6" fill="none" stroke-linecap="round" />
-    <path d="M 62 10 L 70 15 L 68 6" stroke="#FF66B2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-    <text class="handwritten" x="0" y="32" fill="#FF80BF" font-size="16">Autonomous magic!</text>
-  </g>
-
-  <!-- Hand-drawn doodle coffee cup -->
-  <g transform="translate(50, 360)">
-    <rect x="0" y="8" width="18" height="14" rx="2" stroke="#FF66B2" stroke-width="1.3" fill="none" />
-    <path d="M 18 11 Q 23 11 23 15 Q 23 19 18 19" stroke="#FF66B2" stroke-width="1.2" fill="none" />
-    <!-- Steam squiggles -->
-    <path d="M 4 5 Q 6 2 4 0" stroke="#FCE7F3" stroke-width="1" fill="none" stroke-linecap="round" />
-    <path d="M 9 5 Q 11 2 9 0" stroke="#FCE7F3" stroke-width="1" fill="none" stroke-linecap="round" />
-    <path d="M 14 5 Q 16 2 14 0" stroke="#FCE7F3" stroke-width="1" fill="none" stroke-linecap="round" />
-    <text class="handwritten" x="30" y="22" fill="#FDA4AF" font-size="16">Powered by caffeine ☕</text>
+  <!-- 9. PyTorch -->
+  <g class="w-2" transform="translate(20, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Flame Torch -->
+    <path d="M 45 24 C 58 35 55 52 48 58 C 42 63 32 60 30 52 C 28 42 38 38 45 24 Z" class="d-stroke" />
+    <circle cx="56" cy="30" r="3" class="d-fill-pink" />
+    <path d="M 43 44 C 47 48 46 54 42 56" class="d-stroke-fuchsia" stroke-width="1.8" />
   </g>
 
-  <!-- Floating Sparkle Stars -->
-  <g class="floating-sparkle" transform="translate(530, 420)">
-    <path d="M 0,-6 L 1.8,-1.8 L 6,0 L 1.8,1.8 L 0,6 L -1.8,1.8 L -6,0 L -1.8,-1.8 Z" fill="#FF80BF" />
+  <!-- 10. OpenCV -->
+  <g class="w-3" transform="translate(120, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled OpenCV 3 Intersecting Aperture Rings -->
+    <circle cx="45" cy="35" r="10" class="d-stroke" />
+    <circle cx="34" cy="54" r="10" class="d-stroke-pink" />
+    <circle cx="56" cy="54" r="10" class="d-stroke-fuchsia" />
+    <circle cx="45" cy="48" r="3" class="d-fill-soft" />
   </g>
-  <g class="floating-sparkle" transform="translate(790, 410)">
-    <path d="M 0,-5 L 1.5,-1.5 L 5,0 L 1.5,1.5 L 0,5 L -1.5,1.5 L -5,0 L -1.5,-1.5 Z" fill="#E879F9" />
+
+  <!-- 11. TensorFlow -->
+  <g class="w-4" transform="translate(220, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Isometric Neural Cube -->
+    <path d="M 45 24 L 66 36 L 66 60 L 45 72 L 24 60 L 24 36 Z" class="d-stroke-pink" />
+    <line x1="45" y1="24" x2="45" y2="72" class="d-stroke" />
+    <line x1="24" y1="36" x2="45" y2="48" class="d-stroke" />
+    <line x1="66" y1="36" x2="45" y2="48" class="d-stroke" />
+    <circle cx="45" cy="48" r="3.5" class="d-fill" />
   </g>
-  <g class="floating-sparkle" transform="translate(70, 50)">
-    <path d="M 0,-4 L 1.2,-1.2 L 4,0 L 1.2,1.2 L 0,4 L -1.2,1.2 L -4,0 L -1.2,-1.2 Z" fill="#FF2A85" />
+
+  <!-- 12. Computer Vision / Camera Sensor -->
+  <g class="w-1" transform="translate(320, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Vision Eye / Camera Aperture -->
+    <path d="M 22 45 C 32 30, 58 30, 68 45 C 58 60, 32 60, 22 45 Z" class="d-stroke" />
+    <circle cx="45" cy="45" r="10" class="d-stroke-pink" />
+    <circle cx="45" cy="45" r="4.5" class="d-fill-fuchsia" />
+    <circle cx="48" cy="42" r="1.8" fill="#FFF" />
+  </g>
+
+  <!-- 13. ROS / Robotics Robot -->
+  <g class="w-2" transform="translate(420, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Robot Head & Antenna -->
+    <line x1="45" y1="23" x2="45" y2="33" class="d-stroke" />
+    <circle cx="45" cy="23" r="3" class="d-fill-pink" />
+    <rect x="26" y="33" width="38" height="30" rx="8" class="d-stroke-pink" />
+    <circle cx="37" cy="45" r="3.5" class="d-fill" />
+    <circle cx="53" cy="45" r="3.5" class="d-fill" />
+    <line x1="36" y1="55" x2="54" y2="55" class="d-stroke-fuchsia" stroke-width="1.8" />
+  </g>
+
+  <!-- 14. Gazebo Simulation -->
+  <g class="w-3" transform="translate(520, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Gazebo Structure & Wheels -->
+    <path d="M 26 44 L 45 26 L 64 44 Z" class="d-stroke" />
+    <line x1="32" y1="44" x2="32" y2="60" class="d-stroke-pink" />
+    <line x1="58" y1="44" x2="58" y2="60" class="d-stroke-pink" />
+    <circle cx="32" cy="62" r="4" class="d-fill-fuchsia" />
+    <circle cx="58" cy="62" r="4" class="d-fill-fuchsia" />
+    <line x1="26" y1="52" x2="64" y2="52" class="d-stroke" />
+  </g>
+
+  <!-- 15. SLAM / Radar Waves -->
+  <g class="w-4" transform="translate(620, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Lidar Sweep Radar Arcs -->
+    <circle cx="45" cy="60" r="4" class="d-fill" />
+    <path d="M 33 50 A 16 16 0 0 1 57 50" class="d-stroke-pink" />
+    <path d="M 25 40 A 26 26 0 0 1 65 40" class="d-stroke" />
+    <path d="M 18 30 A 36 36 0 0 1 72 30" class="d-stroke-fuchsia" />
+    <line x1="45" y1="60" x2="60" y2="34" class="d-stroke" stroke-dasharray="3,3" />
+  </g>
+
+  <!-- 16. GIS / UrbanLens Spatial Globe -->
+  <g class="w-1" transform="translate(720, 120)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Globe + Location Marker -->
+    <circle cx="45" cy="45" r="22" class="d-stroke-fuchsia" />
+    <ellipse cx="45" cy="45" rx="10" ry="22" class="d-stroke-pink" />
+    <line x1="23" y1="45" x2="67" y2="45" class="d-stroke" />
+    <!-- Pin -->
+    <circle cx="52" cy="34" r="3.5" class="d-fill" />
+  </g>
+
+  <!-- ==================== ROW 3 (8 Icons) ==================== -->
+
+  <!-- 17. Game Development / Gamepad -->
+  <g class="w-3" transform="translate(20, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Retro Game Controller -->
+    <rect x="22" y="32" width="46" height="28" rx="8" class="d-stroke" />
+    <!-- D-pad -->
+    <path d="M 32 40 L 32 52 M 26 46 L 38 46" class="d-stroke-pink" stroke-width="2" />
+    <!-- Buttons -->
+    <circle cx="55" cy="42" r="2.2" class="d-fill-fuchsia" />
+    <circle cx="60" cy="48" r="2.2" class="d-fill-pink" />
+  </g>
+
+  <!-- 18. TailwindCSS -->
+  <g class="w-4" transform="translate(120, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Wave Curves -->
+    <path d="M 26 48 C 30 36, 40 34, 46 44 C 50 50, 56 50, 64 42" class="d-stroke" stroke-width="2.8" />
+    <path d="M 34 56 C 37 47, 44 45, 49 52 C 52 56, 56 56, 62 50" class="d-stroke-pink" stroke-width="2.4" />
+  </g>
+
+  <!-- 19. SQL / Database Cylinder -->
+  <g class="w-1" transform="translate(220, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Database Stacks -->
+    <ellipse cx="45" cy="33" rx="20" ry="7" class="d-stroke" />
+    <path d="M 25 33 L 25 45 C 25 50, 65 50, 65 45 L 65 33" class="d-stroke-pink" />
+    <path d="M 25 45 L 25 57 C 25 62, 65 62, 65 57 L 65 45" class="d-stroke-fuchsia" />
+  </g>
+
+  <!-- 20. Git Branching -->
+  <g class="w-2" transform="translate(320, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Git Branches -->
+    <circle cx="36" cy="60" r="4" class="d-fill" />
+    <circle cx="36" cy="32" r="4" class="d-fill" />
+    <circle cx="56" cy="44" r="4" class="d-fill-pink" />
+    <line x1="36" y1="32" x2="36" y2="60" class="d-stroke" />
+    <path d="M 36 50 C 44 50, 56 48, 56 44" class="d-stroke-pink" />
+  </g>
+
+  <!-- 21. GitHub Octocat Silhouette -->
+  <g class="w-3" transform="translate(420, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Cat Head Silhouette -->
+    <path d="M 30 58 C 26 48, 28 36, 45 36 C 62 36, 64 48, 60 58" class="d-stroke" />
+    <polygon points="32,40 28,26 38,34" class="d-fill" />
+    <polygon points="58,40 62,26 52,34" class="d-fill" />
+    <path d="M 40 48 Q 45 52 50 48" class="d-stroke-pink" />
+  </g>
+
+  <!-- 22. Linux / Terminal Prompt -->
+  <g class="w-4" transform="translate(520, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Terminal Screen with Prompt -->
+    <rect x="24" y="28" width="42" height="34" rx="6" class="d-stroke-pink" />
+    <path d="M 31 40 L 37 45 L 31 50" class="d-stroke" stroke-width="2.2" />
+    <line x1="41" y1="50" x2="52" y2="50" class="d-stroke-fuchsia" stroke-width="2.5" />
+  </g>
+
+  <!-- 23. MacOS -->
+  <g class="w-1" transform="translate(620, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Apple Contour -->
+    <path d="M 45 34 C 42 28, 48 24, 48 24 C 48 24, 52 28, 47 34" class="d-stroke-pink" stroke-width="2" />
+    <path d="M 45 36 C 41 33, 33 34, 30 42 C 27 52, 34 66, 45 66 C 56 66, 63 52, 60 42 C 57 34, 49 33, 45 36 Z" class="d-stroke" stroke-width="2.4" />
+  </g>
+
+  <!-- 24. Docker / Postman / Antigravity -->
+  <g class="w-2" transform="translate(720, 220)">
+    <rect width="90" height="90" class="tile" />
+    <circle cx="45" cy="45" r="32" fill="url(#glowTile)" />
+    <!-- Doodled Orbit Singularity / Rocket -->
+    <circle cx="45" cy="45" r="18" class="d-stroke" stroke-dasharray="6,4" />
+    <ellipse cx="45" cy="45" rx="26" ry="8" class="d-stroke-pink" transform="rotate(-35 45 45)" />
+    <circle cx="45" cy="45" r="5" class="d-fill-fuchsia" />
+    <circle cx="58" cy="36" r="2.5" class="d-fill" />
   </g>
 
 </svg>
