@@ -10,7 +10,6 @@ I build things around:
 - Machine Learning Models
 - Robotics
 - Calibrations
-(I like squeezing fat cats)
 
 ###  Technologies
 (I'm enthusiastic for)
@@ -25,3 +24,4 @@ SLAM-game - For my 3rd year web dev project doing zabardasti for Maitri mam
 
 UrbanLens — Urban intelligence & geospatial decision platform
 
+(I like squeezing fat cats)
