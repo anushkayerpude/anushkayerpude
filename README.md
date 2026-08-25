@@ -1,17 +1,21 @@
 <div align="center">
 
+<img src="./assets/rafale-flight.gif" alt="Dassault Rafale Supersonic Flight" width="100%" />
+
+<br><br>
+
 # 𓆩♡𓆪 Hii, I'm Anushka Yerpude
 
 ### Full-Stack Developer · UX/UI Designer · ML & Robotics Enthusiast
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=CBA6F7&center=true&vCenter=true&width=650&lines=Building+things+that+actually+work.;Computer+Vision+%E2%80%A2+ML+%E2%80%A2+Robotics;Full-Stack+%E2%80%A2+UX%2FUI+%E2%80%A2+Game+Design;Probably+debugging+something+right+now..." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Building+things+that+actually+work.;Computer+Vision+%E2%80%A2+ML+%E2%80%A2+Robotics;Full-Stack+%E2%80%A2+UX%2FUI+%E2%80%A2+Game+Design;Probably+debugging+something+right+now..." />
 
 <br><br>
 
 <a href="https://github.com/anushkayerpude">
-  <img src="https://img.shields.io/github/followers/anushkayerpude?style=for-the-badge&logo=github&label=FOLLOWERS&color=CBA6F7&labelColor=181825" />
+  <img src="https://img.shields.io/github/followers/anushkayerpude?style=for-the-badge&logo=github&label=FOLLOWERS&color=FF2A85&labelColor=18121E" />
 </a>
-<img src="https://komarev.com/ghpvc/?username=anushkayerpude&style=for-the-badge&label=PROFILE+VIEWS&color=CBA6F7" />
+<img src="https://komarev.com/ghpvc/?username=anushkayerpude&style=for-the-badge&label=PROFILE+VIEWS&color=FF2A85" />
 
 </div>
 
@@ -36,7 +40,7 @@ I build things around:
 - 🎨 UX/UI
 - 🎮 Game Designing
 - 🧠 Machine Learning Models
-- 🤖 Robotics
+- 🤖 Robotics & Autonomous Systems
 - 📐 Calibration Systems
 
 If it involves cameras, ML, robots, maps or unnecessarily complicated software, I'm probably interested.
@@ -141,25 +145,23 @@ Tools            → GitHub · Antigravity
 ### 📊 GitHub.exe
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=anushkayerpude&show_icons=true&hide_border=true&bg_color=00000000&title_color=CBA6F7&icon_color=F5C2E7&text_color=CDD6F4&rank_icon=github" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anushkayerpude&layout=compact&hide_border=true&bg_color=00000000&title_color=CBA6F7&text_color=CDD6F4" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=anushkayerpude&show_icons=true&hide_border=true&bg_color=00000000&title_color=FF2A85&icon_color=FF66B2&text_color=FCE7F3&rank_icon=github" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anushkayerpude&layout=compact&hide_border=true&bg_color=00000000&title_color=FF2A85&text_color=FCE7F3" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=anushkayerpude&hide_border=true&background=00000000&ring=CBA6F7&fire=F5C2E7&currStreakLabel=CBA6F7&sideLabels=CDD6F4&dates=9399B2&sideNums=CDD6F4&currStreakNum=CDD6F4" />
+  <img src="https://streak-stats.demolab.com?user=anushkayerpude&hide_border=true&background=00000000&ring=FF2A85&fire=FF66B2&currStreakLabel=FF2A85&sideLabels=FCE7F3&dates=C026D3&sideNums=FCE7F3&currStreakNum=FF66B2" />
 </div>
 
 ---
 
 ### 🐍 Contributions, but make them alive
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/anushkayerpude/anushkayerpude/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/anushkayerpude/anushkayerpude/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/anushkayerpude/anushkayerpude/output/github-contribution-grid-snake.svg">
-</picture>
+<div align="center">
+  <img src="./assets/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
+</div>
 
 ---
 
@@ -169,6 +171,7 @@ Tools            → GitHub · Antigravity
 ☕ caffeine       ██████████  100%
 🐛 bugs           ███████░░░   70%
 🤖 robot thoughts █████████░   90%
+🛩️ rafale hype    ██████████  100%
 🎨 design urge    ████████░░   80%
 🐈 cat obsession  ██████████  100%
 😴 sleep          ██░░░░░░░░   20%
@@ -180,7 +183,7 @@ Tools            → GitHub · Antigravity
 
 <div align="center">
   <a href="https://github.com/anushkayerpude">
-    <img src="https://img.shields.io/badge/GitHub-anushkayerpude-181717?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-anushkayerpude-18121E?style=for-the-badge&logo=github&logoColor=FF2A85" />
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/anushka--yerpude-758933273">
@@ -197,5 +200,6 @@ Tools            → GitHub · Antigravity
   <br><br>
   <sub>Thanks for stalking my GitHub ♡</sub>
   <br><br>
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=gradient" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:FF2A85,100:4A044E" width="100%" />
 </div>
+
