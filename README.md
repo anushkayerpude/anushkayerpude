@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="./assets/cat.gif" alt="Cute Fluffy Magenta Cat" width="160" />
+<img src="./assets/cat.gif" alt="Meme Cat with Bangs and Expressive Eyebrow Dance" width="170" />
 
 <br><br>
 
