@@ -102,7 +102,7 @@ Computer Vision  → OpenCV
 Machine Learning → PyTorch · TensorFlow
 Robotics         → Gazebo · SLAM
 Design           → Figma · UX/UI
-Tools            → Git · GitHub · Linux
+Tools            → Git · GitHub · MacOS
 ```
 
 ---
