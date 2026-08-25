@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 140" width="200" height="108" fill="none">
+  <defs>
+    <linearGradient id="catPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA8CE" />
+      <stop offset="50%" stop-color="#FF75B0" />
+      <stop offset="100%" stop-color="#E03888" />
+    </linearGradient>
+    <linearGradient id="earInnerPink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F6" />
+      <stop offset="100%" stop-color="#FFA6CC" />
+    </linearGradient>
+    <radialGradient id="lapGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF2A85" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF2A85" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .cat-bob {
+      animation: catBob 0.6s ease-in-out infinite alternate;
+    }
+    @keyframes catBob {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-2px); }
+    }
+
+    .paw-left {
+      animation: pawTapLeft 0.3s ease-in-out infinite alternate;
+    }
+    @keyframes pawTapLeft {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+
+    .paw-right {
+      animation: pawTapRight 0.3s ease-in-out infinite alternate 0.15s;
+    }
+    @keyframes pawTapRight {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-8px); }
+    }
+
+    .cat-blink {
+      transform-origin: 130px 65px;
+      animation: eyeBlink 3.6s infinite;
+    }
+    @keyframes eyeBlink {
+      0%, 93%, 97%, 100% { transform: scaleY(1); opacity: 1; }
+      95% { transform: scaleY(0.1); opacity: 0.2; }
+    }
+
+    .purr-heart {
+      animation: floatH 2.4s ease-in-out infinite;
+    }
+    @keyframes floatH {
+      0% { transform: translate(185px, 40px) scale(0.6); opacity: 0; }
+      40% { opacity: 0.95; transform: translate(192px, 24px) scale(1.1); }
+      100% { transform: translate(198px, 6px) scale(0.8); opacity: 0; }
+    }
+  </style>
+
+  <!-- Ambient Keyboard Glow -->
+  <ellipse cx="130" cy="120" rx="65" ry="12" fill="url(#lapGlow)" />
+
+  <!-- Floating Heart -->
+  <g class="purr-heart" fill="#FF66B2">
+    <path d="M 0 3 C 0 0, -4 -2, -6 1 C -8 -2, -12 0, -12 3 C -12 7, -6 11, -6 11 C -6 11, 0 7, 0 3 Z" />
+  </g>
+
+  <!-- Cat Group (Bobbing Body) -->
+  <g class="cat-bob">
+    
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <polygon points="88,68 82,38 110,56" fill="url(#catPinkGrad)" stroke="#8A154E" stroke-width="2" stroke-linejoin="round" />
+    <polygon points="90,64 86,44 106,56" fill="url(#earInnerPink)" />
+    <!-- Right Ear -->
+    <polygon points="150,56 178,38 172,68" fill="url(#catPinkGrad)" stroke="#8A154E" stroke-width="2" stroke-linejoin="round" />
+    <polygon points="154,56 174,44 170,64" fill="url(#earInnerPink)" />
+
+    <!-- Cute Chubby Round Body & Head -->
+    <ellipse cx="130" cy="88" rx="52" ry="36" fill="url(#catPinkGrad)" stroke="#8A154E" stroke-width="2.5" />
+    <ellipse cx="130" cy="94" rx="36" ry="24" fill="#FFE4F0" opacity="0.85" />
+
+    <!-- Eyes (Big Cute Glossy Anime Eyes with Blink) -->
+    <g class="cat-blink">
+      <!-- Left Eye -->
+      <ellipse cx="112" cy="74" rx="8" ry="7.5" fill="#520B2D" />
+      <circle cx="109.5" cy="71.5" r="2.8" fill="#FFFFFF" />
+      <circle cx="114.5" cy="76" r="1.2" fill="#FFFFFF" opacity="0.85" />
+
+      <!-- Right Eye -->
+      <ellipse cx="148" cy="74" rx="8" ry="7.5" fill="#520B2D" />
+      <circle cx="145.5" cy="71.5" r="2.8" fill="#FFFFFF" />
+      <circle cx="150.5" cy="76" r="1.2" fill="#FFFFFF" opacity="0.85" />
+    </g>
+
+    <!-- Cheeks Blush -->
+    <ellipse cx="102" cy="82" rx="6" ry="3.5" fill="#FF4D9B" opacity="0.75" />
+    <ellipse cx="158" cy="82" rx="6" ry="3.5" fill="#FF4D9B" opacity="0.75" />
+
+    <!-- Cute Nose & Mouth -->
+    <polygon points="130,81 127,78 133,78" fill="#FF2A85" />
+    <path d="M 124 82 Q 130 87 130 84 Q 130 87 136 82" stroke="#68103A" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+    <!-- Whiskers -->
+    <line x1="100" y1="80" x2="82" y2="78" stroke="#8A154E" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+    <line x1="100" y1="83" x2="84" y2="86" stroke="#8A154E" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+    <line x1="160" y1="80" x2="178" y2="78" stroke="#8A154E" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+    <line x1="160" y1="83" x2="176" y2="86" stroke="#8A154E" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+
+  </g>
+
+  <!-- Laptop / Keyboard Surface -->
+  <polygon points="80,112 180,112 192,128 68,128" fill="#250B28" stroke="#FF2A85" stroke-width="1.8" />
+  <!-- Keys -->
+  <line x1="88" y1="117" x2="172" y2="117" stroke="#FF66B2" stroke-width="1.8" stroke-dasharray="8,4" />
+  <line x1="84" y1="123" x2="176" y2="123" stroke="#E879F9" stroke-width="1.8" stroke-dasharray="10,4" />
+
+  <!-- Tapping Paws -->
+  <!-- Left Paw -->
+  <g class="paw-left" transform="translate(0, 0)">
+    <ellipse cx="106" cy="116" rx="9" ry="6.5" fill="#FFE4F0" stroke="#8A154E" stroke-width="1.6" />
+    <line x1="106" y1="114" x2="106" y2="119" stroke="#FF66B2" stroke-width="1.1" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Paw -->
+  <g class="paw-right" transform="translate(0, 0)">
+    <ellipse cx="154" cy="116" rx="9" ry="6.5" fill="#FFE4F0" stroke="#8A154E" stroke-width="1.6" />
+    <line x1="154" y1="114" x2="154" y2="119" stroke="#FF66B2" stroke-width="1.1" stroke-linecap="round" />
+  </g>
+
+</svg>
