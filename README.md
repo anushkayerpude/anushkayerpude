@@ -89,7 +89,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 ### ⚡ Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,nextjs,react,nodejs,opencv,pytorch,tensorflow,git,github,figma,linux&perline=7" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,nextjs,react,nodejs,opencv,pytorch,tensorflow,git,github,figma,macos&perline=7" />
 </div>
 
 <br>
