@@ -95,6 +95,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 <br>
 
 ```txt
+Operating System → MacOS
 Languages        → Python · C++ · JavaScript · TypeScript
 Frontend         → Next.js · React
 Backend          → Node.js
@@ -102,7 +103,7 @@ Computer Vision  → OpenCV
 Machine Learning → PyTorch · TensorFlow
 Robotics         → Gazebo · SLAM
 Design           → Figma · UX/UI
-Tools            → Git · GitHub · MacOS
+Tools            → GitHub · Antigravity
 ```
 
 ---
