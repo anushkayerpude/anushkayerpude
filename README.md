@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="./assets/magenta-cat.svg" alt="Animated Magenta Cat" width="240" />
+<img src="./assets/magenta-cat.svg" alt="Animated Cute Chubby Cat" width="260" />
 
 <br><br>
 
