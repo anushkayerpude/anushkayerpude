@@ -149,13 +149,6 @@ Tools            → GitHub · Antigravity
 ### 📊 GitHub.exe
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=anushkayerpude&show_icons=true&hide_border=true&bg_color=00000000&title_color=FF2A85&icon_color=FF66B2&text_color=FCE7F3&rank_icon=github" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anushkayerpude&layout=compact&hide_border=true&bg_color=00000000&title_color=FF2A85&text_color=FCE7F3" />
-</div>
-
-<br>
-
-<div align="center">
   <img src="https://streak-stats.demolab.com?user=anushkayerpude&hide_border=true&background=00000000&ring=FF2A85&fire=FF66B2&currStreakLabel=FF2A85&sideLabels=FCE7F3&dates=C026D3&sideNums=FCE7F3&currStreakNum=FF66B2" />
 </div>
 
