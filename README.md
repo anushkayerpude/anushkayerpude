@@ -157,7 +157,7 @@ Tools            → GitHub · Antigravity
 ### 🐍 Contributions, trying to make them alive
 
 <div align="center">
-  <img src="./assets/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
+  <img src="https://raw.githubusercontent.com/anushkayerpude/anushkayerpude/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
 </div>
 
 ---
