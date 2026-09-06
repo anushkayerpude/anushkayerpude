@@ -62,8 +62,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
     <td width="50%" valign="top">
       <h3>🧠 Intelligence</h3>
       Computer Vision<br>
-      Machine Learning<br>
-      Image Processing<br>
+      System Design<br>
       ML Pipelines<br>
       Intelligent Systems
     </td>
@@ -74,8 +73,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
       UX/UI Design<br>
       Interactive Interfaces<br>
       Product Design<br>
-      Creative Technology<br>
-      Frontend Experiences
+      Creative Technology
     </td>
     <td width="50%" valign="top">
       <h3>🤖 Robotics</h3>
