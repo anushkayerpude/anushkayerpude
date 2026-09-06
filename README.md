@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src="./assets/coding-girl-cat.gif" alt="Girl Developer Coding with Cat" width="100%" />
-
-<br><br>
-
 # 𓆩♡𓆪 Hii, I'm Anushka Yerpude
 
 ### Full-Stack Developer · UX/UI Designer · ML & Robotics Enthusiast
