@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="./assets/cat.gif" alt="Animated Goth Cat Lady and Black Kitten" width="240" />
+<img src="./assets/cat.gif" alt="Animated Goth Girl and Fighting Black Cat" width="250" />
 
 <br><br>
 
