@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="./assets/coding-girl-cat.gif" alt="Girl Developer Coding with Cat" width="100%" />
+
+<br><br>
+
 # 𓆩♡𓆪 Hii, I'm Anushka Yerpude
 
 ### Full-Stack Developer · UX/UI Designer · ML & Robotics Enthusiast
@@ -109,26 +113,35 @@ Robotics         → Gazebo
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3>🌐 Pinas-portf</h3>
       <p><em>My personal portfolio</em></p>
       <p>A home for my projects, experiments, ideas and everything I create.</p>
       <br>
       <code>Portfolio</code> <code>Frontend</code> <code>UX/UI</code>
     </td>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3>🤖 SLAM Game</h3>
       <p><em>3rd Year Web Dev Project</em></p>
       <p>Trying to build a fun game for my college project (SLAM is basically simulated location and mapping) just a fancy word.</p>
       <br>
       <code>SLAM</code> <code>Game Dev</code> <code>Robotics</code>
     </td>
-    <td width="33%" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3>🏙️ UrbanLens</h3>
       <p><em>Urban Intelligence Platform</em></p>
       <p>A geospatial decision-support system for smarter urban planning, infrastructure analysis and spatial intelligence.</p>
       <br>
       <code>GIS</code> <code>ML</code> <code>Urban Tech</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🐾 Paw-Rakshak</h3>
+      <p><em>Emergency Vet & Animal Care Platform</em></p>
+      <p>Connecting you to vets for emergency cases — basically a 102 ambulance for our lil paw mates &lt;3</p>
+      <br>
+      <code>Flutter</code> <code>Dart</code> <code>Firebase</code> <code>HealthTech</code>
     </td>
   </tr>
 </table>
