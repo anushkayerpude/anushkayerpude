@@ -59,7 +59,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
       Game Designing
     </td>
     <td width="50%" valign="top">
-      <h3>🧠 Intelligence</h3>
+      <h3>🧠Intelligence</h3>
       Computer Vision<br>
       System Design<br>
       ML Pipelines<br>
