@@ -53,8 +53,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
   <tr>
     <td width="50%" valign="top">
       <h3>💻 Software</h3>
-      Full-Stack Development<br>
-      Web Applications<br>
+      Full-Stack Dev<br>
       Backend Systems<br>
       APIs<br>
       Game Designing
