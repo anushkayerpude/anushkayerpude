@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="./assets/cat.gif" alt="Meme Cat with Bangs and Expressive Eyebrow Dance" width="170" />
+<img src="./assets/cat.gif" alt="Animated Goth Cat Lady and Black Kitten" width="240" />
 
 <br><br>
 
