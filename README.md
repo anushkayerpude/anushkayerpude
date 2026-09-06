@@ -70,7 +70,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
     <td width="50%" valign="top">
       <h3>🎨 Creative</h3>
       UX/UI Design<br>
-      Interactive Interfaces<br>
+      Interactive UI<br>
       Product Design<br>
       Creative Tech
     </td>
@@ -95,14 +95,12 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 
 ```txt
 Operating System → MacOS
-Languages        → Python · C++ · JavaScript · TypeScript
+Languages        → Python · C++ 
 Frontend         → Next.js · React
 Backend          → Node.js
 Computer Vision  → OpenCV
 Machine Learning → PyTorch · TensorFlow
-Robotics         → Gazebo · SLAM
-Design           → Figma · UX/UI
-Tools            → GitHub · Antigravity
+Robotics         → Gazebo
 ```
 
 ---
@@ -121,7 +119,7 @@ Tools            → GitHub · Antigravity
     <td width="33%" valign="top">
       <h3>🤖 SLAM Game</h3>
       <p><em>3rd Year Web Dev Project</em></p>
-      <p>Doing absolute zabardasti for Maitri mam while somehow turning SLAM concepts into a game-dev project.</p>
+      <p>Trying to build a fun game for my college project (SLAM is basically simulated location and mapping) just a fancy word.</p>
       <br>
       <code>SLAM</code> <code>Game Dev</code> <code>Robotics</code>
     </td>
@@ -159,7 +157,6 @@ Tools            → GitHub · Antigravity
 ☕ caffeine       ██████████  100%
 🐛 bugs           ███████░░░   70%
 🤖 robot thoughts █████████░   90%
-🛩️ rafale hype    ██████████  100%
 🎨 design urge    ████████░░   80%
 🐈 cat obsession  ██████████  100%
 😴 sleep          ██░░░░░░░░   20%
