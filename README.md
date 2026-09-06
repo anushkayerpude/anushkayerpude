@@ -72,7 +72,7 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
       UX/UI Design<br>
       Interactive Interfaces<br>
       Product Design<br>
-      Creative Technology
+      Creative Tech
     </td>
     <td width="50%" valign="top">
       <h3>🤖 Robotics</h3>
