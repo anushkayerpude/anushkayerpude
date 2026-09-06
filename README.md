@@ -79,10 +79,8 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
     </td>
     <td width="50%" valign="top">
       <h3>🤖 Robotics</h3>
-      Robotics<br>
+      OpenCV<br>
       Gazebo<br>
-      SLAM<br>
-      Computer Vision Pipelines<br>
       Calibration
     </td>
   </tr>
