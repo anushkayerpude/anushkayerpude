@@ -114,11 +114,11 @@ Robotics         → Gazebo
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🌐 Pinas-portf</h3>
-      <p><em>My personal portfolio</em></p>
-      <p>A home for my projects, experiments, ideas and everything I create.</p>
+      <h3>🐾 Paw-Rakshak</h3>
+      <p><em>Emergency Vet & Animal Care Platform</em></p>
+      <p>Connecting you to vets for emergency cases — basically a 102 ambulance for our lil paw mates &lt;3</p>
       <br>
-      <code>Portfolio</code> <code>Frontend</code> <code>UX/UI</code>
+      <code>Flutter</code> <code>Dart</code> <code>Firebase</code> <code>HealthTech</code>
     </td>
     <td width="50%" valign="top">
       <h3>🤖 SLAM Game</h3>
@@ -137,11 +137,11 @@ Robotics         → Gazebo
       <code>GIS</code> <code>ML</code> <code>Urban Tech</code>
     </td>
     <td width="50%" valign="top">
-      <h3>🐾 Paw-Rakshak</h3>
-      <p><em>Emergency Vet & Animal Care Platform</em></p>
-      <p>Connecting you to vets for emergency cases — basically a 102 ambulance for our lil paw mates &lt;3</p>
+      <h3>🌐 Pinas-portf</h3>
+      <p><em>My personal portfolio</em></p>
+      <p>A home for my projects, experiments, ideas and everything I create.</p>
       <br>
-      <code>Flutter</code> <code>Dart</code> <code>Firebase</code> <code>HealthTech</code>
+      <code>Portfolio</code> <code>Frontend</code> <code>UX/UI</code>
     </td>
   </tr>
 </table>
