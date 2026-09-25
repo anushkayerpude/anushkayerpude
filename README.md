@@ -2,9 +2,9 @@
 
 # 𓆩♡𓆪 Hii, I'm Anushka Yerpude
 
-### Full-Stack Systems · Applied AI & Perception · Creative Technologist
+### Full-Stack Developer · UX/UI Designer · ML & Robotics Enthusiast
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=680&lines=Building+resilient+systems+%26+intelligence+that+works.;Autonomous+Perception+%E2%80%A2+Defense+Tech+%E2%80%A2+GenAI;Full-Stack+%E2%80%A2+Tactical+UX+%E2%80%A2+Geospatial+Intelligence;Probably+debugging+something+or+squeezing+a+cat..." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Building+things+that+actually+work.;Computer+Vision+%E2%80%A2+ML+%E2%80%A2+Robotics;Full-Stack+%E2%80%A2+UX%2FUI+%E2%80%A2+Game+Design;Probably+debugging+something+right+now..." />
 
 <br>
 
@@ -24,27 +24,26 @@
 ## ✦ About Me
 
 ```txt
-name      : Anushka Yerpude (piñacolada / VIPER-01)
-role      : Systems Engineer & Full-Stack Technologist
-focus     : Distributed Systems × Applied AI × Computer Vision
-curiosity : Tactical Avionics · Geospatial Intelligence · Climate Tech
-currently : Building mission-critical dashboards & deep learning pipelines
-status    : probably debugging something or playing with cats...
+name      : Anushka Yerpude
+role      : B.Tech Student
+focus     : Full-Stack × ML × Robotics
+design    : UX/UI + Creative Technology
+currently : Building cool things
+status    : probably debugging something...
 ```
 
-I build at the intersection of high-throughput web systems, tactical command interfaces, applied machine learning, and robotics. Whether it's training perception models for autonomous vehicles, engineering real-time geospatial intelligence dashboards, or building generative AI ecosystems, I care about turning ambitious, complex ideas into fast, resilient software.
+I like working at the intersection of software, design, machine learning and robotics — basically anything that lets me turn slightly questionable ideas into things that actually work.
 
-```txt
-Current focus areas:
-├── 🛡️  Tactical Systems & Situational Awareness Dashboards
-├── 🧠  Foundation Models, LLM Agents & Gemini Ecosystem
-├── 🚗  Autonomous Driving Perception & Tracking (YOLO, ByteTrack, TTC)
-├── 🌿  Climate Tech, Environmental MRV & IoT Telemetry
-├── 📊  Financial Risk Engines & Quantitative Forecasting (VaR / CVaR)
-├── 📍  Geospatial Decision Support & Hyperlocal Optimization
-├── 💻  High-Throughput Full-Stack Web Architecture (Next.js, FastAPI, WebSockets)
-└── 🎨  Tactical HUDs, 3D WebGL Shaders & Procedural Audio Synthesis
-```
+I build things around:
+- 👁️ Computer Vision
+- 💻 Full-Stack Development
+- 🎨 UX/UI
+- 🎮 Game Designing
+- 🧠 Machine Learning Models
+- 🤖 Robotics & Autonomous Systems
+- 📐 Calibration Systems
+
+If it involves cameras, ML, robots, maps or unnecessarily complicated software, I'm probably interested.
 
 ---
 
@@ -53,34 +52,33 @@ Current focus areas:
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>💻 Full-Stack & Systems</h3>
-      Next.js 16 · TypeScript<br>
-      FastAPI · Node.js / Express<br>
-      WebSockets · Real-time Telemetry<br>
-      Distributed Microservices
+      <h3>💻 Software</h3>
+      Full-Stack Dev<br>
+      Backend Systems<br>
+      APIs<br>
+      Game Designing
     </td>
     <td width="50%" valign="top">
-      <h3>🧠 Applied AI & ML</h3>
-      Google Gemini 3.8 Flash SDK<br>
-      Computer Vision & YOLO<br>
-      ByteTrack · Trajectory Prediction<br>
-      PyTorch · Volatility & Risk Engines
+      <h3>🧠Intelligence</h3>
+      Computer Vision<br>
+      System Design<br>
+      ML Pipelines<br>
+      Intelligent Systems
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🛰️ Perception & Geospatial</h3>
-      Autonomous Driving Stacks<br>
-      Monocular Depth & Collision Risk<br>
-      Leaflet Tactical Command Maps<br>
-      IoT Sensor Evidence Fusion
+      <h3>🎨 Creative</h3>
+      UX/UI Design<br>
+      Interactive UI<br>
+      Product Design<br>
+      Creative Tech
     </td>
     <td width="50%" valign="top">
-      <h3>🎨 Tactical & Creative Tech</h3>
-      Military HUD & Cyberpunk UI<br>
-      Web Speech & Audio Synthesis<br>
-      Three.js / WebGL Shaders<br>
-      Interactive Product Design
+      <h3>🤖 Robotics</h3>
+      OpenCV<br>
+      Gazebo<br>
+      Calibration
     </td>
   </tr>
 </table>
@@ -193,13 +191,12 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
 
 ---
 
-### ✧ Developer Lore & Diagnostics
+### ✧ Random Developer Lore
 
 ```txt
 ☕ caffeine       ██████████  100%
-🐛 bugs           ██████░░░░   60%
+🐛 bugs           ███████░░░   70%
 🤖 robot thoughts █████████░   90%
-✈️ fighter jets   ██████████  100%
 🎨 design urge    ████████░░   80%
 🐈 cat obsession  ██████████  100%
 😴 sleep          ██░░░░░░░░   20%
@@ -230,3 +227,4 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
   <br><br>
   <img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:FF2A85,100:4A044E" width="100%" />
 </div>
+
