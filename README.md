@@ -29,7 +29,7 @@ role      : B.Tech Student
 focus     : Full-Stack × ML × Robotics
 design    : UX/UI + Creative Technology
 currently : Building cool things
-status    : probably debugging something...
+status    : Probably building another new project..
 ```
 
 I like working at the intersection of software, design, machine learning and robotics — basically anything that lets me turn slightly questionable ideas into things that actually work.
