@@ -97,7 +97,7 @@ If it involves training models, computer vision, simulating physics, autonomous 
 Operating System → MacOS 
 Languages        → Python · C++ · TypeScript · JavaScript · GLSL
 Quant & ML       → PyTorch · TensorFlow · Scikit-Learn · NumPy · Pandas · SciPy · Statsmodels · XGBoost
-Computer Vision  → OpenCV · YOLO · TorchVision · Monocular Depth · Camera Calibration · Lidar Simulation
+Computer Vision  → OpenCV · YOLO · TorchVision · Monocular Depth · Camera Calibration · LiDAR Simulation
 Robotics & Games → Gazebo · ROS · Sensor Fusion (Kalman Filters) · WebGL · Three.js 
 Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebSockets · Git
 ```
