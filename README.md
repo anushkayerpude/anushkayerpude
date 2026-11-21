@@ -46,6 +46,33 @@ If it involves training models, computer vision, simulating physics, autonomous 
 
 ---
 
+### 📐 Mathematical Foundations
+
+> *These subjects distinguish quantitative ML from simply using machine learning libraries.*
+
+- ▫️ **Linear Algebra** — Eigen & SVD decompositions, matrix factorizations, vector spaces, coordinate transforms
+- ▫️ **Calculus** — Multivariate gradients, Jacobian & Hessian analysis, Taylor approximations
+- ▫️ **Probability Theory** — Random variables, probability distributions, conditional expectation, Markov chains
+- ▫️ **Statistics** — Parametric & non-parametric inference, MLE / MAP estimation, hypothesis testing
+- ▫️ **Optimization Theory** — Convex optimization, Lagrangian duality, KKT conditions, gradient & quasi-Newton solvers
+- ▫️ **Numerical Analysis** — Numerical stability, condition numbers, floating-point error propagation
+- ▫️ **Stochastic Processes** — Random walks, Brownian motion, martingales, continuous-time stochastic calculus
+
+---
+
+### ⑤ Currently Learning
+
+> *Actively developing theoretical rigor, quantitative models, and computational depth.*
+
+- ▫️ **Mathematical foundations of machine learning** (generalization bounds, loss surfaces, representation theory)
+- ▫️ **Statistical modelling and hypothesis testing** (regime detection, regression diagnostics, significance testing)
+- ▫️ **Time series forecasting** (GARCH, volatility estimation, Kalman filtering, state-space models)
+- ▫️ **Financial data analysis** (tail-risk evaluation, Value-at-Risk / CVaR, quantitative portfolio backtesting)
+- ▫️ **Optimization algorithms** (constrained optimization, first & second-order solvers, stochastic methods)
+- ▫️ **Data Structures and Algorithms in C++** (low-latency execution, graph algorithms, memory-efficient systems)
+
+---
+
 ### ◇ What I Do
 
 <table>
