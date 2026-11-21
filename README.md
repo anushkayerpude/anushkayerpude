@@ -21,7 +21,7 @@
 
 ---
 
-## ✦ About Me
+## 𓆩 ✦ 𓆪 About Me
 
 ```txt
 name      : Anushka Yerpude
@@ -35,18 +35,18 @@ status    : waiting for loss curves to behave...
 I operate at the intersection of quantitative machine learning, computer vision, and simulation — turning numbers, cameras, and code into models that actually learn, robots that perceive, and games that come alive.
 
 I build around:
-- 📈 Quantitative ML & Risk Engines
-- 👁️ Computer Vision & Tracking
-- 🧠 Training Deep Models
-- 🤖 Robotics & Sensor Fusion
-- 🎮 Game AI & Physics Sim
-- 📐 Mathematical Calibration
+- ⟡ Quantitative ML & Risk Engines
+- ⟢ Computer Vision & Tracking
+- ✦ Training Deep Models
+- ◈ Robotics & Sensor Fusion
+- ✧ Game AI & Physics Sim
+- 𖥔 Mathematical Calibration
 
 If it involves training models, computer vision, robots, or games, I'm probably building it.
 
 ---
 
-### 📐 Mathematical Foundations
+### 𓆩 ⟡ 𓆪 Mathematical Foundations
 
 > *These subjects distinguish quantitative ML from simply using machine learning libraries.*
 
@@ -60,7 +60,7 @@ If it involves training models, computer vision, robots, or games, I'm probably 
 
 ---
 
-### ⑤ Currently Learning
+### 𓆩 𖥔 𓆪 Currently Learning
 
 > *Actively developing core mathematical rigor and computational depth.*
 
@@ -73,19 +73,19 @@ If it involves training models, computer vision, robots, or games, I'm probably 
 
 ---
 
-### ◇ What I Do
+### 𓆩 ◇ 𓆪 What I Do
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>📈 Quantitative ML</h3>
+      <h3>✦ Quantitative ML</h3>
       Statistical Modeling<br>
       Time-Series & Risk Engines<br>
       Loss Optimization & Backtesting<br>
       Predictive Analytics
     </td>
     <td width="50%" valign="top">
-      <h3>👁️ Computer Vision</h3>
+      <h3>⟢ Computer Vision</h3>
       Object Detection & Tracking<br>
       Monocular Depth Estimation<br>
       Camera Calibration & SLAM<br>
@@ -94,14 +94,14 @@ If it involves training models, computer vision, robots, or games, I'm probably 
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🤖 Robotics</h3>
+      <h3>◈ Robotics</h3>
       Sensor Fusion & Kalman Filters<br>
       Gazebo Physics Simulation<br>
       Kinematics & Motion Planning<br>
       Autonomous Perception Stacks
     </td>
     <td width="50%" valign="top">
-      <h3>🎮 Games & Simulation</h3>
+      <h3>✧ Games & Simulation</h3>
       Reinforcement Learning Environments<br>
       Game AI & Agent Behavior<br>
       Procedural Physics & Game Loops<br>
@@ -112,7 +112,7 @@ If it involves training models, computer vision, robots, or games, I'm probably 
 
 ---
 
-### ⚡ Tech Arsenal
+### 𓆩 ✶ 𓆪 Tech Arsenal
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,cpp,pytorch,tensorflow,opencv,fastapi,postgres,docker,ts,js,react,nextjs,tailwind,vite,flutter,dart,git,github,linux,macos&perline=10" />
@@ -131,19 +131,19 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 
 ---
 
-### ◈ Tactical Hangar // Featured Projects
+### 𓆩 ◈ 𓆪 Tactical Hangar // Featured Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/RiskNet">📈 RiskNet</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/RiskNet">⟡ RiskNet</a></h3>
       <p><em>ML-Powered Portfolio Risk Engine & Forecasting System</em></p>
       <p>Quantitative financial risk analytics engine focused on tail-risk evaluation rather than stock prices. Computes Value-at-Risk, Expected Shortfall, volatility forecasting via GARCH & machine learning models, market regime detection, and backtesting.</p>
       <br>
       <code>Python</code> <code>PyTorch</code> <code>XGBoost</code> <code>Scikit-learn</code> <code>GARCH</code> <code>Plotly</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/NeuroDrive">🚗 NeuroDrive</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/NeuroDrive">◈ NeuroDrive</a></h3>
       <p><em>Deep Learning Autonomous Driving Perception Stack</em></p>
       <p>Modular road-scene vision and perception stack for autonomous robotics. Integrates YOLO object detection, ByteTrack tracking, lane segmentation, monocular depth estimation, Kalman filter sensor fusion, LSTM/Transformer trajectory prediction, and Time-to-Collision risk scoring.</p>
       <br>
@@ -152,14 +152,14 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/VanGuard">🛡️ VanGuard</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/VanGuard">✦ VanGuard</a></h3>
       <p><em>Tactical Command Dashboard & Intelligence Fusion Engine</em></p>
       <p>Defense-grade situational awareness and decision-support platform built for <strong>HackHertz 2026</strong>. Features a dark military HUD, Leaflet tactical map with 4D time-scrubbing replay, Gemini structured-output intelligence briefings, real-time WebSocket telemetry, and Web Speech synthetic voice alerts.</p>
       <br>
       <code>TypeScript</code> <code>React</code> <code>Node.js</code> <code>Leaflet</code> <code>Gemini AI</code> <code>WebSockets</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/pinas-portf">⚡ Pinas-portf</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/pinas-portf">✶ Pinas-portf</a></h3>
       <p><em>Tactical Fighter Jet Simulator // Callsign VIPER-01</em></p>
       <p>Aerospace simulation and interactive flight experience featuring 5th-gen fighter dynamics, custom 3D WebGL afterburner GLSL shaders, procedural Web Audio soundscapes, and reactive game-like flight controls.</p>
       <br>
@@ -168,14 +168,14 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/BioCarbonMRV">🌿 BioCarbonMRV</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/BioCarbonMRV">𖥔 BioCarbonMRV</a></h3>
       <p><em>AI-Powered Algae Carbon Sequestration MRV Platform</em></p>
       <p>Circular carbon verification system built for <strong>HackOut @ DA-IICT</strong>. Combines IoT pond sensors, remote sensing data, and biological growth equations with ML evidence fusion to monitor algae CO₂ uptake, detect anomalies, and produce verification-ready carbon passports.</p>
       <br>
       <code>Python</code> <code>FastAPI</code> <code>React</code> <code>Vite</code> <code>Docker</code> <code>IoT Telemetry</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/kaksha.ai">🎓 Kaksha.ai</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/kaksha.ai">⟢ Kaksha.ai</a></h3>
       <p><em>AI-Powered Academic ERP & Unified Teaching Ecosystem</em></p>
       <p>Comprehensive academic operating system powered by <strong>Google Gemini 3.8 Flash</strong> and <strong>Next.js 16</strong>. Integrates prompt-to-pack teaching studios, teleprompter classroom mode, slide-grounded doubt solving, 5-mode student AI tutors, and automated Google Workspace exports.</p>
       <br>
@@ -184,14 +184,14 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/mandi.ai">🥬 Mandi.ai</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/mandi.ai">◇ Mandi.ai</a></h3>
       <p><em>Hyperlocal Spatial Optimization Engine for Micro-Vendors</em></p>
       <p>AI-powered spatial optimization platform for informal street vendors in Ahmedabad. Recommends what, where, and when to sell with ward-level risk scoring, high-contrast sunlight UI, vendor sales data flywheels, and multilingual Web Speech API narration in Gujarati, Hindi, and English.</p>
       <br>
       <code>Python</code> <code>FastAPI</code> <code>TypeScript</code> <code>Vite PWA</code> <code>GIS</code> <code>Web Speech API</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/paw-rakshak">🐾 Paw-Rakshak</a></h3>
+      <h3><a href="https://github.com/anushkayerpude/paw-rakshak">✧ Paw-Rakshak</a></h3>
       <p><em>Emergency Dispatch & Animal Care Response Network</em></p>
       <p>A dedicated 102 emergency response platform for animals, connecting pet parents and rescuers directly with on-call veterinary clinics and ambulances during critical situations.</p>
       <br>
@@ -202,7 +202,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 
 ---
 
-### 📊 GitHub.exe
+### 𓆩 ⟡ 𓆪 GitHub.exe
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=anushkayerpude&hide_border=true&background=00000000&ring=FF2A85&fire=FF66B2&currStreakLabel=FF2A85&sideLabels=FCE7F3&dates=C026D3&sideNums=FCE7F3&currStreakNum=FF66B2" />
@@ -210,7 +210,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 
 ---
 
-### 🐍 Contributions, trying to make them alive
+### 𓆩 ᯓ 𓆪 Contributions, trying to make them alive
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/anushkayerpude/anushkayerpude/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" width="100%" />
@@ -218,7 +218,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 
 ---
 
-### ✧ Random Developer Lore
+### 𓆩 ✧ 𓆪 Random Developer Lore
 
 ```txt
 ☕ caffeine         ██████████  100%
@@ -231,7 +231,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 
 ---
 
-### ☕ Find Me Somewhere On The Internet
+### 𓆩♡𓆪 Find Me Somewhere On The Internet
 
 <div align="center">
   <a href="https://github.com/anushkayerpude">
