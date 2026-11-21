@@ -2,9 +2,9 @@
 
 # 𓆩♡𓆪 Hii, I'm Anushka Yerpude
 
-### Full-Stack Developer · UX/UI Designer · ML & Robotics Enthusiast
+### Quantitative ML · Computer Vision · Robotics & Games
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Building+things+that+actually+work.;Computer+Vision+%E2%80%A2+ML+%E2%80%A2+Robotics;Full-Stack+%E2%80%A2+UX%2FUI+%E2%80%A2+Game+Design;Probably+debugging+something+right+now..." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Quantitative+ML+%E2%80%A2+Computer+Vision+%E2%80%A2+Robotics;Training+models%2C+simulating+physics+%26+playing+with+games;Loss+functions%2C+visual+telemetry+%26+autonomous+systems;Probably+waiting+for+an+epoch+to+converge..." />
 
 <br>
 
@@ -25,25 +25,24 @@
 
 ```txt
 name      : Anushka Yerpude
-role      : B.Tech Student
-focus     : Full-Stack × ML × Robotics
-design    : UX/UI + Creative Technology
-currently : Building cool things
-status    : Probably building another new project..
+role      : Quantitative ML & Computer Vision Enthusiast
+focus     : Quant ML × Computer Vision × Robotics & Games
+toolkit   : PyTorch · OpenCV · Numerical Optimization · Simulation
+currently : Training models, tuning weights & simulating systems
+status    : waiting for loss curves to behave...
 ```
 
-I like working at the intersection of software, design, machine learning and robotics — basically anything that lets me turn slightly questionable ideas into things that actually work.
+I operate at the intersection of quantitative machine learning, computer vision, and simulation — turning mathematical formulations, visual telemetry, and reinforcement dynamics into models that actually learn, robots that perceive, and games that come alive.
 
-I build things around:
-- 👁️ Computer Vision
-- 💻 Full-Stack Development
-- 🎨 UX/UI
-- 🎮 Game Designing
-- 🧠 Machine Learning Models
-- 🤖 Robotics & Autonomous Systems
-- 📐 Calibration Systems
+I spend my time training models, building vision pipelines, and experimenting with autonomous agents across:
+- 📈 **Quantitative ML & Statistical Modeling** (risk engines, volatility forecasting, backtesting, loss function tuning)
+- 👁️ **Computer Vision & Perception** (object detection & tracking, monocular depth, spatial perception, visual SLAM)
+- 🧠 **Training Deep Models & Optimization** (transformers, CNNs, latent representations, fine-tuning)
+- 🤖 **Robotics & Autonomous Systems** (sensor fusion, Kalman filters, camera calibration, Gazebo physics simulation)
+- 🎮 **Game AI, Physics & Simulation Environments** (reinforcement learning, procedural game mechanics, WebGL/shaders)
+- 📐 **Calibration & Evidence Fusion** (sensor telemetry, time-series analysis, multimodal decision pipelines)
 
-If it involves cameras, ML, robots, maps or unnecessarily complicated software, I'm probably interested.
+If it involves training models, computer vision, simulating physics, autonomous robots, or designing games around intelligent agents, I'm definitely building it.
 
 ---
 
@@ -52,33 +51,34 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>💻 Software</h3>
-      Full-Stack Dev<br>
-      Backend Systems<br>
-      APIs<br>
-      Game Designing
+      <h3>📈 Quantitative ML</h3>
+      Statistical Modeling<br>
+      Time-Series & Risk Engines<br>
+      Loss Optimization & Backtesting<br>
+      Predictive Analytics
     </td>
     <td width="50%" valign="top">
-      <h3>🧠Intelligence</h3>
-      Computer Vision<br>
-      System Design<br>
-      ML Pipelines<br>
-      Intelligent Systems
+      <h3>👁️ Computer Vision</h3>
+      Object Detection & Tracking<br>
+      Monocular Depth Estimation<br>
+      Camera Calibration & SLAM<br>
+      Visual Telemetry Pipelines
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🎨 Creative</h3>
-      UX/UI Design<br>
-      Interactive UI<br>
-      Product Design<br>
-      Creative Tech
+      <h3>🤖 Robotics</h3>
+      Sensor Fusion & Kalman Filters<br>
+      Gazebo Physics Simulation<br>
+      Kinematics & Motion Planning<br>
+      Autonomous Perception Stacks
     </td>
     <td width="50%" valign="top">
-      <h3>🤖 Robotics</h3>
-      OpenCV<br>
-      Gazebo<br>
-      Calibration
+      <h3>🎮 Games & Simulation</h3>
+      Reinforcement Learning Environments<br>
+      Game AI & Agent Behavior<br>
+      Procedural Physics & Game Loops<br>
+      Interactive WebGL & Shaders
     </td>
   </tr>
 </table>
@@ -88,18 +88,18 @@ If it involves cameras, ML, robots, maps or unnecessarily complicated software, 
 ### ⚡ Tech Arsenal
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,ts,js,nextjs,react,fastapi,nodejs,pytorch,tensorflow,opencv,docker,postgres,firebase,tailwind,vite,flutter,dart,git,github,figma,macos&perline=11" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,pytorch,tensorflow,opencv,fastapi,postgres,docker,ts,js,react,nextjs,tailwind,vite,flutter,dart,git,github,linux,macos&perline=10" />
 </div>
 
 <br>
 
 ```txt
-Operating System → MacOS
-Languages        → Python · C++ · TypeScript · JavaScript · Dart · GLSL
-Frontend         → Next.js 16 · React · Vite · TailwindCSS · Three.js
-Backend & APIs   → FastAPI · Node.js · Express · WebSockets · Firebase
-AI & Vision      → Gemini API · PyTorch · OpenCV · YOLO · Scikit-learn · XGBoost
-Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub Actions
+Operating System → MacOS 
+Languages        → Python · C++ · TypeScript · JavaScript · GLSL
+Quant & ML       → PyTorch · TensorFlow · Scikit-Learn · NumPy · Pandas · SciPy · Statsmodels · XGBoost
+Computer Vision  → OpenCV · YOLO · TorchVision · Monocular Depth · Camera Calibration · Lidar Simulation
+Robotics & Games → Gazebo · ROS · Sensor Fusion (Kalman Filters) · WebGL · Three.js 
+Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebSockets · Git
 ```
 
 ---
@@ -109,18 +109,34 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
 <table>
   <tr>
     <td width="50%" valign="top">
+      <h3><a href="https://github.com/anushkayerpude/RiskNet">📈 RiskNet</a></h3>
+      <p><em>ML-Powered Portfolio Risk Engine & Forecasting System</em></p>
+      <p>Quantitative financial risk analytics engine focused on tail-risk evaluation rather than stock prices. Computes Value-at-Risk (VaR), Expected Shortfall (CVaR), volatility forecasting via GARCH & machine learning models, market regime detection, and backtesting.</p>
+      <br>
+      <code>Python</code> <code>PyTorch</code> <code>XGBoost</code> <code>Scikit-learn</code> <code>GARCH</code> <code>Plotly</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/anushkayerpude/NeuroDrive">🚗 NeuroDrive</a></h3>
+      <p><em>Deep Learning Autonomous Driving Perception Stack</em></p>
+      <p>Modular road-scene vision and perception stack for autonomous robotics. Integrates YOLO object detection, ByteTrack tracking, lane segmentation, monocular depth estimation, Kalman filter sensor fusion, LSTM/Transformer trajectory prediction, and Time-to-Collision (TTC) risk scoring.</p>
+      <br>
+      <code>Python</code> <code>PyTorch</code> <code>OpenCV</code> <code>Kalman Filter</code> <code>FastAPI</code> <code>Computer Vision</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/VanGuard">🛡️ VanGuard</a></h3>
       <p><em>Tactical Command Dashboard & Intelligence Fusion Engine</em></p>
-      <p>Situational awareness and decision-support platform built for <strong>HackHertz 2026 (Defense Track)</strong>. Features a dark military HUD, Leaflet tactical map with 4D time-scrubbing replay, Gemini structured-output intelligence briefings, real-time WebSocket telemetry, and Web Speech synthetic voice alerts.</p>
+      <p>Defense-grade situational awareness and decision-support platform built for <strong>HackHertz 2026 (Defense Track)</strong>. Features a dark military HUD, Leaflet tactical map with 4D time-scrubbing replay, Gemini structured-output intelligence briefings, real-time WebSocket telemetry, and Web Speech synthetic voice alerts.</p>
       <br>
       <code>TypeScript</code> <code>React</code> <code>Node.js</code> <code>Leaflet</code> <code>Gemini AI</code> <code>WebSockets</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/kaksha.ai">🎓 Kaksha.ai</a></h3>
-      <p><em>AI-Powered Academic ERP & Unified Teaching Ecosystem</em></p>
-      <p>Comprehensive academic operating system powered by <strong>Google Gemini 3.8 Flash</strong> and <strong>Next.js 16</strong>. Integrates prompt-to-pack teaching studios, teleprompter classroom mode, slide-grounded doubt solving, 5-mode student AI tutors, and automated Google Workspace exports.</p>
+      <h3><a href="https://github.com/anushkayerpude/pinas-portf">⚡ Pinas-portf</a></h3>
+      <p><em>Tactical Fighter Jet Simulator // Callsign VIPER-01</em></p>
+      <p>Aerospace simulation and interactive flight experience featuring 5th-gen fighter dynamics, custom 3D WebGL afterburner GLSL shaders, procedural Web Audio soundscapes, and reactive game-like flight controls.</p>
       <br>
-      <code>Next.js 16</code> <code>TypeScript</code> <code>Gemini 3.8 Flash</code> <code>Firebase</code> <code>Tailwind</code>
+      <code>JavaScript</code> <code>WebGL</code> <code>GLSL Shaders</code> <code>Web Audio API</code> <code>Game Tech</code>
     </td>
   </tr>
   <tr>
@@ -142,7 +158,7 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/mandi.ai">🥬 Mandi.ai</a></h3>
-      <p><em>Hyperlocal Decision Platform for Street Produce Vendors</em></p>
+      <p><em>Hyperlocal Spatial Optimization Engine for Micro-Vendors</em></p>
       <p>AI-powered spatial optimization platform for informal street vendors in Ahmedabad. Recommends what, where, and when to sell with ward-level risk scoring, high-contrast sunlight UI, vendor sales data flywheels, and multilingual Web Speech API narration in Gujarati, Hindi, and English.</p>
       <br>
       <code>Python</code> <code>FastAPI</code> <code>TypeScript</code> <code>Vite PWA</code> <code>GIS</code> <code>Web Speech API</code>
@@ -162,13 +178,6 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
       <p>A dedicated 102 emergency response platform for animals, connecting pet parents and rescuers directly with on-call veterinary clinics and ambulances during critical situations.</p>
       <br>
       <code>Flutter</code> <code>Dart</code> <code>Firebase</code> <code>Mobile HealthTech</code>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/pinas-portf">⚡ Pinas-portf</a></h3>
-      <p><em>Tactical Fighter Jet Portfolio // Callsign VIPER-01</em></p>
-      <p>Aviation-grade personal portfolio featuring 5th-gen fighter jets, interactive 3D WebGL afterburner shaders, procedural Web Audio soundscapes, and continuous-flow command drawers.</p>
-      <br>
-      <code>JavaScript</code> <code>WebGL</code> <code>GLSL Shaders</code> <code>Web Audio API</code> <code>UX/UI</code>
     </td>
   </tr>
 </table>
@@ -194,12 +203,12 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
 ### ✧ Random Developer Lore
 
 ```txt
-☕ caffeine       ██████████  100%
-🐛 bugs           ███████░░░   70%
-🤖 robot thoughts █████████░   90%
-🎨 design urge    ████████░░   80%
-🐈 cat obsession  ██████████  100%
-😴 sleep          ██░░░░░░░░   20%
+☕ caffeine         ██████████  100%
+📉 loss converging   ████████░░   80%
+🤖 robot thoughts   █████████░   90%
+🎮 game loop tick   ████████░░   85%
+🐈 cat obsession    ██████████  100%
+😴 sleep            ██░░░░░░░░   20%
 ```
 
 ---
@@ -219,7 +228,7 @@ Data & DevOps    → Docker · PostgreSQL · Redis · Pandas · NumPy · GitHub 
 <br>
 
 <div align="center">
-  <code>build</code> → <code>break</code> → <code>debug</code> → <code>learn</code> → <code>repeat</code>
+  <code>train</code> → <code>simulate</code> → <code>evaluate</code> → <code>optimize</code> → <code>repeat</code>
   <br><br>
   🐈 <em>Certified Fat-Cat Squeezer™</em>
   <br><br>
