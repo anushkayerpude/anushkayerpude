@@ -32,17 +32,17 @@ currently : Training models, tuning weights & simulating systems
 status    : waiting for loss curves to behave...
 ```
 
-I operate at the intersection of quantitative machine learning, computer vision, and simulation — turning mathematical formulations, visual telemetry, and reinforcement dynamics into models that actually learn, robots that perceive, and games that come alive.
+I operate at the intersection of quantitative machine learning, computer vision, and simulation — turning numbers, cameras, and code into models that actually learn, robots that perceive, and games that come alive.
 
-I spend my time training models, building vision pipelines, and experimenting with autonomous agents across:
-- 📈 **Quantitative ML & Statistical Modeling** (risk engines, volatility forecasting, backtesting, loss function tuning)
-- 👁️ **Computer Vision & Perception** (object detection & tracking, monocular depth, spatial perception, visual SLAM)
-- 🧠 **Training Deep Models & Optimization** (transformers, CNNs, latent representations, fine-tuning)
-- 🤖 **Robotics & Autonomous Systems** (sensor fusion, Kalman filters, camera calibration, Gazebo physics simulation)
-- 🎮 **Game AI, Physics & Simulation Environments** (reinforcement learning, procedural game mechanics, WebGL/shaders)
-- 📐 **Calibration & Evidence Fusion** (sensor telemetry, time-series analysis, multimodal decision pipelines)
+I build around:
+- 📈 Quantitative ML & Risk Engines
+- 👁️ Computer Vision & Tracking
+- 🧠 Training Deep Models
+- 🤖 Robotics & Sensor Fusion
+- 🎮 Game AI & Physics Sim
+- 📐 Mathematical Calibration
 
-If it involves training models, computer vision, simulating physics, autonomous robots, or designing games around intelligent agents, I'm definitely building it.
+If it involves training models, computer vision, robots, or games, I'm probably building it.
 
 ---
 
@@ -50,26 +50,26 @@ If it involves training models, computer vision, simulating physics, autonomous 
 
 > *These subjects distinguish quantitative ML from simply using machine learning libraries.*
 
-- ▫️ **Linear Algebra** — Eigen & SVD decompositions, matrix factorizations, vector spaces, coordinate transforms
-- ▫️ **Calculus** — Multivariate gradients, Jacobian & Hessian analysis, Taylor approximations
-- ▫️ **Probability Theory** — Random variables, probability distributions, conditional expectation, Markov chains
-- ▫️ **Statistics** — Parametric & non-parametric inference, MLE / MAP estimation, hypothesis testing
-- ▫️ **Optimization Theory** — Convex optimization, Lagrangian duality, KKT conditions, gradient & quasi-Newton solvers
-- ▫️ **Numerical Analysis** — Numerical stability, condition numbers, floating-point error propagation
-- ▫️ **Stochastic Processes** — Random walks, Brownian motion, martingales, continuous-time stochastic calculus
+- ▫️ Linear Algebra
+- ▫️ Calculus
+- ▫️ Probability Theory
+- ▫️ Statistics
+- ▫️ Optimization Theory
+- ▫️ Numerical Analysis
+- ▫️ Stochastic Processes
 
 ---
 
 ### ⑤ Currently Learning
 
-> *Actively developing theoretical rigor, quantitative models, and computational depth.*
+> *Actively developing core mathematical rigor and computational depth.*
 
-- ▫️ **Mathematical foundations of machine learning** (generalization bounds, loss surfaces, representation theory)
-- ▫️ **Statistical modelling and hypothesis testing** (regime detection, regression diagnostics, significance testing)
-- ▫️ **Time series forecasting** (GARCH, volatility estimation, Kalman filtering, state-space models)
-- ▫️ **Financial data analysis** (tail-risk evaluation, Value-at-Risk / CVaR, quantitative portfolio backtesting)
-- ▫️ **Optimization algorithms** (constrained optimization, first & second-order solvers, stochastic methods)
-- ▫️ **Data Structures and Algorithms in C++** (low-latency execution, graph algorithms, memory-efficient systems)
+- ▫️ Mathematical foundations of machine learning
+- ▫️ Statistical modelling and hypothesis testing
+- ▫️ Time series forecasting
+- ▫️ Financial data analysis
+- ▫️ Optimization algorithms
+- ▫️ Data Structures and Algorithms in C++
 
 ---
 
@@ -125,7 +125,7 @@ Operating System → MacOS
 Languages        → Python · C++ · TypeScript · JavaScript · GLSL
 Quant & ML       → PyTorch · TensorFlow · Scikit-Learn · NumPy · Pandas · SciPy · Statsmodels · XGBoost
 Computer Vision  → OpenCV · YOLO · TorchVision · Monocular Depth · Camera Calibration · LiDAR Simulation
-Robotics & Games → Gazebo · ROS · Sensor Fusion (Kalman Filters) · WebGL · Three.js 
+Robotics & Games → Gazebo · ROS · Sensor Fusion · WebGL · Three.js
 Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebSockets · Git
 ```
 
@@ -138,14 +138,14 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
     <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/RiskNet">📈 RiskNet</a></h3>
       <p><em>ML-Powered Portfolio Risk Engine & Forecasting System</em></p>
-      <p>Quantitative financial risk analytics engine focused on tail-risk evaluation rather than stock prices. Computes Value-at-Risk (VaR), Expected Shortfall (CVaR), volatility forecasting via GARCH & machine learning models, market regime detection, and backtesting.</p>
+      <p>Quantitative financial risk analytics engine focused on tail-risk evaluation rather than stock prices. Computes Value-at-Risk, Expected Shortfall, volatility forecasting via GARCH & machine learning models, market regime detection, and backtesting.</p>
       <br>
       <code>Python</code> <code>PyTorch</code> <code>XGBoost</code> <code>Scikit-learn</code> <code>GARCH</code> <code>Plotly</code>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/NeuroDrive">🚗 NeuroDrive</a></h3>
       <p><em>Deep Learning Autonomous Driving Perception Stack</em></p>
-      <p>Modular road-scene vision and perception stack for autonomous robotics. Integrates YOLO object detection, ByteTrack tracking, lane segmentation, monocular depth estimation, Kalman filter sensor fusion, LSTM/Transformer trajectory prediction, and Time-to-Collision (TTC) risk scoring.</p>
+      <p>Modular road-scene vision and perception stack for autonomous robotics. Integrates YOLO object detection, ByteTrack tracking, lane segmentation, monocular depth estimation, Kalman filter sensor fusion, LSTM/Transformer trajectory prediction, and Time-to-Collision risk scoring.</p>
       <br>
       <code>Python</code> <code>PyTorch</code> <code>OpenCV</code> <code>Kalman Filter</code> <code>FastAPI</code> <code>Computer Vision</code>
     </td>
@@ -154,7 +154,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
     <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/VanGuard">🛡️ VanGuard</a></h3>
       <p><em>Tactical Command Dashboard & Intelligence Fusion Engine</em></p>
-      <p>Defense-grade situational awareness and decision-support platform built for <strong>HackHertz 2026 (Defense Track)</strong>. Features a dark military HUD, Leaflet tactical map with 4D time-scrubbing replay, Gemini structured-output intelligence briefings, real-time WebSocket telemetry, and Web Speech synthetic voice alerts.</p>
+      <p>Defense-grade situational awareness and decision-support platform built for <strong>HackHertz 2026</strong>. Features a dark military HUD, Leaflet tactical map with 4D time-scrubbing replay, Gemini structured-output intelligence briefings, real-time WebSocket telemetry, and Web Speech synthetic voice alerts.</p>
       <br>
       <code>TypeScript</code> <code>React</code> <code>Node.js</code> <code>Leaflet</code> <code>Gemini AI</code> <code>WebSockets</code>
     </td>
@@ -175,11 +175,11 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
       <code>Python</code> <code>FastAPI</code> <code>React</code> <code>Vite</code> <code>Docker</code> <code>IoT Telemetry</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/NeuroDrive">🚗 NeuroDrive</a></h3>
-      <p><em>Deep Learning Autonomous Driving Perception Stack</em></p>
-      <p>Modular road-scene perception architecture integrating YOLO object detection, ByteTrack tracking, lane segmentation, monocular depth estimation, Kalman filters, LSTM/Transformer trajectory prediction, and Time-to-Collision (TTC) risk scoring.</p>
+      <h3><a href="https://github.com/anushkayerpude/kaksha.ai">🎓 Kaksha.ai</a></h3>
+      <p><em>AI-Powered Academic ERP & Unified Teaching Ecosystem</em></p>
+      <p>Comprehensive academic operating system powered by <strong>Google Gemini 3.8 Flash</strong> and <strong>Next.js 16</strong>. Integrates prompt-to-pack teaching studios, teleprompter classroom mode, slide-grounded doubt solving, 5-mode student AI tutors, and automated Google Workspace exports.</p>
       <br>
-      <code>Python</code> <code>PyTorch</code> <code>OpenCV</code> <code>FastAPI</code> <code>Docker</code> <code>Computer Vision</code>
+      <code>Next.js 16</code> <code>TypeScript</code> <code>Gemini 3.8 Flash</code> <code>Firebase</code> <code>Tailwind</code>
     </td>
   </tr>
   <tr>
@@ -191,17 +191,8 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
       <code>Python</code> <code>FastAPI</code> <code>TypeScript</code> <code>Vite PWA</code> <code>GIS</code> <code>Web Speech API</code>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/anushkayerpude/RiskNet">📈 RiskNet</a></h3>
-      <p><em>ML-Powered Portfolio Risk Engine & Forecasting System</em></p>
-      <p>Quantitative financial risk analytics engine focused on tail-risk evaluation rather than stock prices. Computes Value-at-Risk (VaR), Expected Shortfall (CVaR), volatility forecasting via GARCH & machine learning models, market regime detection, and backtesting.</p>
-      <br>
-      <code>Python</code> <code>PyTorch</code> <code>XGBoost</code> <code>Scikit-learn</code> <code>GARCH</code> <code>Plotly</code>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/paw-rakshak">🐾 Paw-Rakshak</a></h3>
-      <p><em>Emergency Vet & Animal Care Network</em></p>
+      <p><em>Emergency Dispatch & Animal Care Response Network</em></p>
       <p>A dedicated 102 emergency response platform for animals, connecting pet parents and rescuers directly with on-call veterinary clinics and ambulances during critical situations.</p>
       <br>
       <code>Flutter</code> <code>Dart</code> <code>Firebase</code> <code>Mobile HealthTech</code>
