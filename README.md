@@ -2,9 +2,9 @@
 
 # 𓆩♡𓆪 Hii, I'm Anushka Yerpude
 
-### Quantitative ML · Computer Vision · Robotics & Games
+### Quantitative ML · Computer Vision · Robotics & Autonomous Systems
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Quantitative+ML+%E2%80%A2+Computer+Vision+%E2%80%A2+Robotics;Training+models%2C+simulating+physics+%26+playing+with+games;Loss+functions%2C+visual+telemetry+%26+autonomous+systems;Probably+waiting+for+an+epoch+to+converge..." />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=800&color=FF2A85&center=true&vCenter=true&width=650&lines=Quantitative+ML+%E2%80%A2+Computer+Vision+%E2%80%A2+Robotics;Training+models%2C+tuning+weights+%26+simulating+robotics;Loss+functions%2C+visual+telemetry+%26+autonomous+systems;Probably+waiting+for+an+epoch+to+converge..." />
 
 <br>
 
@@ -26,23 +26,23 @@
 ```txt
 name      : Anushka Yerpude
 role      : Quantitative ML & Computer Vision Enthusiast
-focus     : Quant ML × Computer Vision × Robotics & Games
+focus     : Quant ML × Computer Vision × Robotics
 toolkit   : PyTorch · OpenCV · Numerical Optimization · Simulation
 currently : Training models, tuning weights & simulating systems
 status    : waiting for loss curves to behave...
 ```
 
-I operate at the intersection of quantitative machine learning, computer vision, and simulation — turning numbers, cameras, and code into models that actually learn, robots that perceive, and games that come alive.
+I operate at the intersection of quantitative machine learning, computer vision, and robotics — turning numbers, cameras, and code into models that actually learn and autonomous systems that perceive.
 
 I build around:
 - ⟡ Quantitative ML & Risk Engines
 - ⟢ Computer Vision & Tracking
 - ✦ Training Deep Models
 - ◈ Robotics & Sensor Fusion
-- ✧ Game AI & Physics Sim
+- ✧ Autonomous Navigation & SLAM
 - 𖥔 Mathematical Calibration
 
-If it involves training models, computer vision, robots, or games, I'm probably building it.
+If it involves training models, computer vision, robots, or autonomous systems, I'm probably building it.
 
 ---
 
@@ -96,16 +96,16 @@ If it involves training models, computer vision, robots, or games, I'm probably 
     <td width="50%" valign="top">
       <h3>◈ Robotics</h3>
       Sensor Fusion & Kalman Filters<br>
-      Gazebo Physics Simulation<br>
+      Gazebo Simulation<br>
       Kinematics & Motion Planning<br>
-      Autonomous Perception Stacks
+      Control Systems
     </td>
     <td width="50%" valign="top">
-      <h3>✧ Games & Simulation</h3>
-      Reinforcement Learning Environments<br>
-      Game AI & Agent Behavior<br>
-      Procedural Physics & Game Loops<br>
-      Interactive WebGL & Shaders
+      <h3>✧ Autonomous Systems</h3>
+      SLAM & Spatial Mapping<br>
+      LiDAR & Telemetry Pipelines<br>
+      Trajectory Prediction<br>
+      Edge Inference
     </td>
   </tr>
 </table>
@@ -122,10 +122,10 @@ If it involves training models, computer vision, robots, or games, I'm probably 
 
 ```txt
 Operating System → MacOS 
-Languages        → Python · C++ · TypeScript · JavaScript · GLSL
+Languages        → Python · C++ · TypeScript · JavaScript
 Quant & ML       → PyTorch · TensorFlow · Scikit-Learn · NumPy · Pandas · SciPy · Statsmodels · XGBoost
 Computer Vision  → OpenCV · YOLO · TorchVision · Monocular Depth · Camera Calibration · LiDAR Simulation
-Robotics & Games → Gazebo · ROS · Sensor Fusion · WebGL · Three.js
+Robotics & Stack → Gazebo · ROS · Sensor Fusion · LiDAR · SLAM
 Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebSockets · Git
 ```
 
@@ -160,10 +160,10 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/anushkayerpude/pinas-portf">✶ Pinas-portf</a></h3>
-      <p><em>Tactical Fighter Jet Simulator // Callsign VIPER-01</em></p>
-      <p>Aerospace simulation and interactive flight experience featuring 5th-gen fighter dynamics, custom 3D WebGL afterburner GLSL shaders, procedural Web Audio soundscapes, and reactive game-like flight controls.</p>
+      <p><em>Tactical Fighter Jet Portfolio // Callsign VIPER-01</em></p>
+      <p>Aviation-grade personal portfolio inspired by 5th-gen fighter jets, featuring interactive HUD interfaces, procedural Web Audio soundscapes, and continuous-flow command drawers.</p>
       <br>
-      <code>JavaScript</code> <code>WebGL</code> <code>GLSL Shaders</code> <code>Web Audio API</code> <code>Game Tech</code>
+      <code>JavaScript</code> <code>Web Audio API</code> <code>Interactive UI</code> <code>Creative Tech</code>
     </td>
   </tr>
   <tr>
@@ -224,7 +224,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 ☕ caffeine         ██████████  100%
 📉 loss converging   ████████░░   80%
 🤖 robot thoughts   █████████░   90%
-🎮 game loop tick   ████████░░   85%
+🧠 model training   ████████░░   85%
 🐈 cat obsession    ██████████  100%
 😴 sleep            ██░░░░░░░░   20%
 ```
