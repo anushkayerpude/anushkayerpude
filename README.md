@@ -246,7 +246,7 @@ Backend & Infra  → FastAPI · Docker · PostgreSQL · Redis · Node.js · WebS
 <br>
 
 <div align="center">
-  <code>train</code> → <code>simulate</code> → <code>evaluate</code> → <code>optimize</code> → <code>repeat</code>
+  <code>train</code> → <code>simulate</code> → <code>evaluate</code> → <code>ovulate</code> → <code>optimize</code> → <code>repeat</code>
   <br><br>
   🐈 <em>Certified Fat-Cat Squeezer™</em>
   <br><br>
